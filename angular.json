@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EcotapizFront"
+    }
+  },
+  "defaultProject": "EcotapizFront",
+  "cli": {
+    "analytics": "46e1af78-7f7e-4778-bf63-c0c2f03deb8d"
+  }
 }
