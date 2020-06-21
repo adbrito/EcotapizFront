@@ -1,0 +1,16 @@
+app-nav-simulador{
+    background-color: red;
+    width: 100%;
+}
+app-vista-prev{
+    background-color: blue;
+    width: 25%;
+}
+app-modelo{
+    background-color: yellow;
+    width: 75%;
+}
+div{
+    display: flex;
+    flex-direction: row;
+}

@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './fijos/header/header.component';
 import { FooterComponent } from './fijos/footer/footer.component';
 import { HomeComponent } from './paginas/home/home.component';
-import { SimuladorComponent } from './paginas/simulador/simulador.component';
 import { CatalogoComponent } from './paginas/catalogo/catalogo.component';
 import { BlogComponent } from './paginas/blog/blog.component';
 
@@ -16,11 +15,10 @@ import { BlogComponent } from './paginas/blog/blog.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    SimuladorComponent,
     CatalogoComponent,
-    BlogComponent
+    BlogComponent,
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule
   ],
