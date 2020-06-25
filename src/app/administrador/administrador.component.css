@@ -16,13 +16,25 @@
   
   .login-heading {
     font-weight: 300;
+    
   }
   
+  @font-face {
+    font-family: 'Arvo';
+    font-display: block;
+    src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  }
+  
+  .styled-text {
+    font-family: 'Arvo', sans-serif;
+  }
+
+
   .btn-login {
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
-    border-radius: 2rem;
+    /*border-radius: 2rem;*/
   }
   
   .form-label-group {
@@ -34,7 +46,7 @@
   .form-label-group>label {
     padding: var(--input-padding-y) var(--input-padding-x);
     height: auto;
-    border-radius: 2rem;
+    /*border-radius: 2rem;*/
   }
   
   .form-label-group>label {
