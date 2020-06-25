@@ -10,6 +10,7 @@ export class SimuladorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SimuladorRoutingModule } from './simulador-routing.module';
 import { SimuladorComponent } from './simulador.component';
 import { NavSimuladorComponent } from './nav-simulador/nav-simulador.component';

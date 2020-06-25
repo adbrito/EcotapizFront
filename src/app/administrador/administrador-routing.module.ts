@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdministradorComponent } from './administrador.component';
 
-const routes: Routes = [{ path: '', component: AdministradorComponent }];
+const routes: Routes = [{ path: 'login', component: AdministradorComponent },
+{ path: '', component: AdministradorComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

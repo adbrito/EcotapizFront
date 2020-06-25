@@ -9,10 +9,9 @@ import { AppComponent } from './app.component';
 
 const routes: Routes =
   [{
-    path: 'home',
-    component: AppComponent,
+    path: 'home',  component: HomeComponent,
   },
-  { path: 'app', loadChildren: () => import('./administrador/administrador.module').then(m => m.AdministradorModule) },
+  { path: 'admin', loadChildren: () => import('./administrador/administrador.module').then(m => m.AdministradorModule) },
   { path: 'simulador', loadChildren: () => import('./paginas/simulador/simulador.module').then(m => m.SimuladorModule) },
   {path: '**', component: AppComponent}];
 
