@@ -9,7 +9,7 @@ import { CotizacionComponent } from './opciones/cotizacion/cotizacion.component'
 
 import { SimuladorComponent } from './simulador.component';
 
-const routes: Routes = [{ path: '', component: SimuladorComponent},
+const routes: Routes = [{ path: '', component: VistaPrevComponent},
 { path: 'modelo', component: DisenioComponent ,outlet: 'aux' }];
 
 @NgModule({

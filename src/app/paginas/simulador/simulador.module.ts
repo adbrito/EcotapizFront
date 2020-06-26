@@ -8,13 +8,16 @@ import { ModeloComponent } from './opciones/modelo/modelo.component';
 import { DisenioComponent } from './opciones/disenio/disenio.component';
 import { MaterialesComponent } from './opciones/materiales/materiales.component';
 import { CotizacionComponent } from './opciones/cotizacion/cotizacion.component';
+import {modelElement} from 'src/assets/js/model-element.min.js';
 
 
 @NgModule({
-  declarations: [SimuladorComponent, NavSimuladorComponent, VistaPrevComponent, ModeloComponent, DisenioComponent, MaterialesComponent, CotizacionComponent],
+  declarations: [SimuladorComponent,NavSimuladorComponent, VistaPrevComponent, ModeloComponent, DisenioComponent, MaterialesComponent, CotizacionComponent],
   imports: [
     CommonModule,
+    
     SimuladorRoutingModule
+    
   ]
 })
 export class SimuladorModule { }
