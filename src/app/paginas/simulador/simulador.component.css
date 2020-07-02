@@ -5,6 +5,8 @@ app-nav-simulador{
 app-vista-prev{
     background-color: blue;
     width: 50%;
+
+    z-index: -2;
 }
 app-modelo{
     background-color: yellow;

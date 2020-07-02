@@ -13,52 +13,78 @@ import { OrbitControls } from 'three-orbitcontrols-ts';
 export class VistaPrevComponent implements OnInit {
   @ViewChild('rendererContainer') rendererContainer: ElementRef;
   @HostListener('window:resize', ['$event'])
+
 onWindowResize(event) {
     this.renderer.setSize(event.target.innerWidth, event.target.innerHeight) 
 }
+canvas;
 
   scene;
   renderer;
   camera;
   mesh;
   controls;
-  pathPato = '../../../../assets/3d/duck/Duck.gltf';
+  path = '../../../../assets/3d/duck/Duck.gltf';
 
   isMouseDown = false;
   constructor() {
+  
+
+  }
+
+
+ 
+
+
+  ngOnInit(): void {
+ 
+  }
+
+
+
+
+  render() {
+    requestAnimationFrame(this.render.bind(this));
+    this.renderer.render(this.scene, this.camera);
+  }
+
+
+  // マウスを押したとき                  
+  onMouseDown(event) {
+    this.isMouseDown = true;
+  }
+
+ 
+
+  
+  ngAfterViewInit() {
     let me = this;
 
     this.scene = new THREE.Scene();
-
-    this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    
+    this.canvas=  document.getElementById('canvas')   as HTMLCanvasElement; 
+    this.camera = new THREE.PerspectiveCamera(75, this.canvas.clientWidth / this.canvas.clientHeight, 0.1, 1000);
     this.camera.position.z = 25;
-    this.camera.position.y = 5;
-    this.controls = new OrbitControls(this.camera);
-    this.controls.minPolarAngle = 0;
-this.controls.maxPolarAngle = Math.PI;
-this.controls.enableZoom = true;
-
-/*
-// How far you can dolly in and out ( PerspectiveCamera only )
-this.controls.minDistance = 0;
-this.controls.maxDistance = Infinity;
-
-this.controls.enableZoom = true; // Set to false to disable zooming
-this.controls.zoomSpeed = 1.0;
+    this.camera.position.y = 50;
 
 
-this.controls.enablePan = true; // Set to false to disable panning (ie vertical and horizontal translations)
+   
 
-this.controls.enableDamping = true; // Set to false to disable damping (ie inertia)
-this.controls.dampingFactor = 0.25;
-*/
+
     //レンダラーを作成
-    this.renderer = new THREE.WebGLRenderer();
-    this.renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(this.renderer.domElement);
+    
+    this.renderer = new THREE.WebGLRenderer({canvas: this.canvas});
+    this.renderer.setViewport( this.canvas.clientWidth, this.canvas.clientHeight);
     //背景色を設定
     this.renderer.setClearColor(0x00ffff, 1);
     this.renderer.gammaOutput = true;
+    
+    this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight );
+
+
+
+
+    this.controls = new OrbitControls(this.camera);
 
     //光源を作成
     var light = new THREE.DirectionalLight("#c1582d", 1);
@@ -77,14 +103,14 @@ this.controls.dampingFactor = 0.25;
     var loader = new GLTFLoader();
 
     // Load a glTF resource
-    loader.load(
-      // resource URL
-      '../../../../assets/3d/duck/Duck.gltf',
+    loader.load(this.path,
       // called when the resource is loaded
       function (gltf) {
 
+    
+
         me.mesh = gltf.scene;
-        me.mesh.scale.set(10, 10, 10);
+        me.mesh.scale.set(20, 20, 20);
         me.scene.add(me.mesh);
         console.log("mesh: ", me.mesh);
 
@@ -110,35 +136,16 @@ this.controls.dampingFactor = 0.25;
 
       }
     );
+    this.canvas.addEventListener('resize', function () {
+      me.canvas.width  = me.canvas.clientWidth;
+      me.canvas.height =  me.canvas.clientHeight;
+      me.renderer.setViewport(0, 0,  me.canvas.clientWidth,  me.canvas.clientHeight);
+      me.camera.aspect = me.canvas.clientWidth / me.canvas.clientHeight;
+      me.camera.updateProjectionMatrix();
+    });
 
     this.render();
    
-
-  }
-  ngOnInit(): void {
-  }
-
-
-
-
-  render() {
-    requestAnimationFrame(this.render.bind(this));
-    this.renderer.render(this.scene, this.camera);
-  }
-
-
-  // マウスを押したとき
-  onMouseDown(event) {
-    this.isMouseDown = true;
-  }
-
- 
-
-  
-  ngAfterViewInit() {
-    //this.renderer.setSize(window.innerWidth, window.innerHeight);
-    //this.rendererContainer.nativeElement.appendChild(this.renderer.domElement);
-    //this.animate();
 }
 
 
