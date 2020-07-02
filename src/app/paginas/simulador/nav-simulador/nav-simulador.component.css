@@ -1,0 +1,23 @@
+.menu {
+    width: 100%;
+    float: center;
+ 
+    text-align: center;
+  }
+  
+  .menu ul li {
+    display:inline-block;
+    list-style-type: none;
+    text-align: left;
+    background-color: fffff;
+    
+    
+  }
+  
+  .menu ul li a {
+    padding: 10px;
+  }
+  img{
+      width: 25px;
+      height: 25px;
+  }
