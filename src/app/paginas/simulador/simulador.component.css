@@ -9,7 +9,8 @@ app-vista-prev{
     z-index: -2;
 }
 app-modelo{
-    background-color: yellow;
+    background-color: #96C0EB;
+    opacity: 0.5; /* Le puse transparencia para poner una sola imagen de fondo y que se vea [JF]*/
     width: 50%;
 }
 div{
