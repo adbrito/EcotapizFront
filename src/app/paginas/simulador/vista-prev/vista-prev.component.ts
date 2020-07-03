@@ -15,7 +15,7 @@ export class VistaPrevComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
 
 onWindowResize(event) {
-    this.renderer.setSize(event.target.innerWidth, event.target.innerHeight) 
+    this.renderer.setSize(event.target.innerWidth, event.target.innerHeight)
 }
 canvas;
 
@@ -28,16 +28,16 @@ canvas;
 
   isMouseDown = false;
   constructor() {
-  
+
 
   }
 
 
- 
+
 
 
   ngOnInit(): void {
- 
+
   }
 
 
@@ -49,42 +49,43 @@ canvas;
   }
 
 
-  // マウスを押したとき                  
+  // マウスを押したとき
   onMouseDown(event) {
     this.isMouseDown = true;
   }
 
- 
 
-  
+
+
   ngAfterViewInit() {
     let me = this;
 
     this.scene = new THREE.Scene();
-    
-    this.canvas=  document.getElementById('canvas')   as HTMLCanvasElement; 
+
+    this.canvas=  document.getElementById('canvas')   as HTMLCanvasElement;
     this.camera = new THREE.PerspectiveCamera(75, this.canvas.clientWidth / this.canvas.clientHeight, 0.1, 1000);
     this.camera.position.z = 25;
     this.camera.position.y = 50;
 
 
-   
+
 
 
     //レンダラーを作成
-    
+
     this.renderer = new THREE.WebGLRenderer({canvas: this.canvas});
     this.renderer.setViewport( this.canvas.clientWidth, this.canvas.clientHeight);
     //背景色を設定
     this.renderer.setClearColor(0x00ffff, 1);
     this.renderer.gammaOutput = true;
-    
+
     this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight );
 
 
 
 
-    this.controls = new OrbitControls(this.camera);
+    this.controls = new OrbitControls(this.camera,this.canvas); /*quitar this.canvas para habilitar el pato de la muerte*/
+
 
     //光源を作成
     var light = new THREE.DirectionalLight("#c1582d", 1);
@@ -107,7 +108,7 @@ canvas;
       // called when the resource is loaded
       function (gltf) {
 
-    
+
 
         me.mesh = gltf.scene;
         me.mesh.scale.set(20, 20, 20);
@@ -145,7 +146,7 @@ canvas;
     });
 
     this.render();
-   
+
 }
 
 
