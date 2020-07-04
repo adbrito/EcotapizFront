@@ -75,15 +75,17 @@
 /*Imágenes y grid*/
 img{
   margin-bottom: 2%;
-  border-radius: 100%;
+  border-radius: 20%;
   padding: 2%;
-  width:33%;
+  height: 15 rem;
+  width: 33%;
 }
 
 section.containerImg{
   display: flex;
   flex-wrap:wrap;
   flex-direction: column;
+  width: 100%;
 }
 
 div.navegacionOpciones{
