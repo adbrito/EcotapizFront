@@ -8,13 +8,35 @@ app-vista-prev{
 
     z-index: -2;
 }
+
+
+/*Aquí van las difererentes ventanas del mini catálogo del simulador*/
 app-modelo{
     margin: 4%;
     background-color: #96C0EB;
-    background-opacity: 50%; /* Le puse transparencia para poner una sola imagen de fondo y que se vea [JF]*/
+    background-opacity: 50%;
     width: 50%;
     border-radius: 10%;
 }
+app-materiales{
+    margin: 4%;
+    background-color: #96C0EB;
+    background-opacity: 50%;
+    width: 50%;
+    border-radius: 10%;
+}
+app-disenio{
+    margin: 4%;
+    background-color: #96C0EB;
+    background-opacity: 50%;
+    width: 50%;
+    border-radius: 10%;
+}
+
+
+
+
+
 div{
     display: flex;
     flex-direction: row;
