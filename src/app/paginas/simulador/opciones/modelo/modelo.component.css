@@ -76,7 +76,7 @@
 
 /*Imágenes y grid*/
 img{
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   border-radius: 100%;
   padding: 2%;
   width:33%;
@@ -86,26 +86,23 @@ section.containerImg{
   display: flex;
   flex-wrap:wrap;
   flex-direction: column;
-  background-color: #ff0303;
 }
 
-/*Imagenes[WORKING]
-.column {
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
-.column img {
-  margin-bottom: 12px;
-  border-radius: 100%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+div.navegacionOpciones{
+  font-size: 1.3rem;
+  text-align: center;
 }
 
-*/
+.navegacionOpciones > a:link, a:visited {
+  color: white;
+  text-decoration:none ;
+  padding: 2%;
+}
+
+
+
+
+
 
 
 /*===================================================================================Pruebas=======================================================================================*/
