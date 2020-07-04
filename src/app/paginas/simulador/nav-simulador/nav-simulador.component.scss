@@ -1,3 +1,5 @@
+@import "src/styles.scss";
+
 .menu {
     width: 100%;
     float: center;
@@ -9,12 +11,13 @@
     display:inline-block;
     list-style-type: none;
     text-align: left;
-    background-color: fffff;
+    background-color: primary;
     
     
   }
   
   .menu ul li a {
+    font-family:  $font-titulos;
     padding: 10px;
   }
   img{

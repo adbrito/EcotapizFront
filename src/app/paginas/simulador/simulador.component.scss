@@ -1,5 +1,7 @@
+@import "src/styles.scss";
+
 app-nav-simulador{
-    background-color: red;
+    background-color: $col-primary;
     width: 100%;
 }
 app-vista-prev{
@@ -9,7 +11,7 @@ app-vista-prev{
     z-index: -2;
 }
 app-modelo{
-    background-color: yellow;
+    background-color:  $col-primary;
     width: 50%;
 }
 div{
