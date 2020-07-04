@@ -1,3 +1,143 @@
+/*Componente*/
+
+
+
+/*Label Modelo*/
+.modelo{
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  margin: 5%;
+}
+
+/* Solución search bar 1 */
+.container {
+  width: 100%; /*100vw*/
+  height: 10%; /*10vh*/
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.container .searchbox {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 53px; /*Dejar en pixeles para que viva el search bar[JF]*/
+  transition: 0.4s linear;
+  overflow: hidden;
+}
+.container .searchbox .searchbox__input {
+  display: block;
+  appearance: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #24233A;
+  padding: 15px;
+  color: #24233A;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.container .searchbox .searchbox__input::placeholder {
+  color: #24233A;
+}
+.container .searchbox .searchbox__icon {
+  position: absolute;
+  right: calc(53px / 2);
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.container .searchbox .searchbox__icon path {
+  fill: #ffffff;
+  transition: 0.4s linear;
+}
+
+
+.container .searchbox:focus-within {
+  max-width: 300px;
+}
+
+.container .searchbox:focus-within .searchbox__input {
+  background-color: #FFF;
+  padding-right: 50px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.container .searchbox:focus-within .searchbox__icon path {
+  fill: #24233A;
+}
+
+
+/*Imágenes y grid*/
+img{
+  margin-bottom: 20px;
+  border-radius: 100%;
+  padding: 2%;
+  width:33%;
+}
+
+section.containerImg{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  background-color: #ff0303;
+}
+
+/*Imagenes[WORKING]
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.column img {
+  margin-bottom: 12px;
+  border-radius: 100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*/
+
+
+/*===================================================================================Pruebas=======================================================================================*/
+
+
+/*Imagenes[WORKING]
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.column img {
+  margin-bottom: 12px;
+  border-radius: 100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
 /* Adaptación*/
 /*
 .search-box {
@@ -57,30 +197,6 @@
 
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -200,120 +316,3 @@ padding: 10px;
 }
 
 */
-
-
-
-
-
-
-
-
-
-/* Solución search bar 1 */
-
-/*Label Modelo*/
-
-.modelo{
-  font-size: 40px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: left;
-  margin: 5%;
-
-}
-
-/*Search Bar*/
-
-/* Creo que no es necesario
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #26547C;
-}
-*/
-
-
-.container {
-  width: 100%; /*100vw*/
-  height: 10%; /*10vh*/
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.container .searchbox {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 53px; /*Dejar en pixeles para que viva el search bar[JF]*/
-  transition: 0.4s linear;
-  overflow: hidden;
-}
-.container .searchbox .searchbox__input {
-  display: block;
-  appearance: none;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  background-color: #24233A;
-  padding: 15px;
-  color: #24233A;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.4s linear;
-}
-.container .searchbox .searchbox__input::placeholder {
-  color: #24233A;
-}
-.container .searchbox .searchbox__icon {
-  position: absolute;
-  right: calc(53px / 2);
-  top: 50%;
-  transform: translate(50%, -50%);
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
-}
-
-.container .searchbox .searchbox__icon path {
-  fill: #ffffff;
-  transition: 0.4s linear;
-}
-
-
-.container .searchbox:focus-within {
-  max-width: 300px;
-}
-
-.container .searchbox:focus-within .searchbox__input {
-  background-color: #FFF;
-  padding-right: 50px;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
-}
-.container .searchbox:focus-within .searchbox__icon path {
-  fill: #24233A;
-}
-
-
-/*Imagenes*/
-
-.column {
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
-
-.column img {
-  margin-bottom: 12px;
-  border-radius: 100%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
