@@ -4,11 +4,13 @@ app-nav-simulador{
 }
 app-vista-prev{
     background-color: blue;
-    width: 25%;
+    width: 50%;
+
+    z-index: -2;
 }
 app-modelo{
     background-color: yellow;
-    width: 75%;
+    width: 50%;
 }
 div{
     display: flex;
