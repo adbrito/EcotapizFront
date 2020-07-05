@@ -9,6 +9,8 @@ import { HomeComponent } from './paginas/home/home.component';
 import { CatalogoComponent } from './paginas/catalogo/catalogo.component';
 import { BlogComponent } from './paginas/blog/blog.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
+import  {  SimuladorModule  }      from  './paginas/simulador/simulador.module' ;  // <- importar
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ContactoComponent } from './paginas/contacto/contacto.component';
   ],
   imports: [ 
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SimuladorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

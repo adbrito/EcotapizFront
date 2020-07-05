@@ -9,8 +9,17 @@ import { CotizacionComponent } from './opciones/cotizacion/cotizacion.component'
 
 import { SimuladorComponent } from './simulador.component';
 
-const routes: Routes = [{ path: '', component: SimuladorComponent},
-{ path: 'modelo', component: DisenioComponent ,outlet: 'aux' }];
+const routes: Routes = [
+  {
+    path: 'app', component: SimuladorComponent,
+    children: [
+      { path: 'modelo', component: ModeloComponent, outlet: 'app' },
+      { path: 'materiales', component: MaterialesComponent, outlet: 'app' },
+      { path: 'disenio', component: DisenioComponent, outlet: 'app' },
+      { path: 'cotizacion', component: CotizacionComponent, outlet: 'app' }
+
+    ]
+  }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

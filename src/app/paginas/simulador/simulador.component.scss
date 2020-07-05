@@ -10,9 +10,10 @@ app-vista-prev{
 
     z-index: -2;
 }
-app-modelo{
+router-outlet{
     background-color:  $col-primary;
     width: 50%;
+    height: 50%;
 }
 div{
     display: flex;
