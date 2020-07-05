@@ -34,8 +34,9 @@ app-disenio{
     width: 33%;
     height: 20%;
     justify-content: center;
-
-    border-radius: 10%;
+    border-radius: 13%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
 }
 
 

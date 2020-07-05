@@ -1,23 +1,29 @@
 /*Componente*/
 
 /*Label Diseño*/
-.disenio{
+div.disenio{
+  margin:30%;
   font-size: 40px;
   font-weight: bold;
   color: #ffffff;
-  text-align: left;
+  text-align: right;
   margin: 5%;
 }
 
 /* Solución search bar 1 */
-.container {
+.containerSearch {
+  background-color: #19294b;
+  background-opacity: 50%;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
   width: 100%; /*100vw*/
   height: 10%; /*10vh*/
   display: flex;
   justify-content: left;
   align-items: center;
+  /*border-style: solid;*/
 }
-.container .searchbox {
+.containerSearch .searchbox {
   position: relative;
   display: block;
   width: 100%;
@@ -25,7 +31,7 @@
   transition: 0.4s linear;
   overflow: hidden;
 }
-.container .searchbox .searchbox__input {
+.containerSearch .searchbox .searchbox__input {
   display: block;
   appearance: none;
   width: 100%;
@@ -39,10 +45,10 @@
   cursor: pointer;
   transition: 0.4s linear;
 }
-.container .searchbox .searchbox__input::placeholder {
+.containerSearch .searchbox .searchbox__input::placeholder {
   color: #24233A;
 }
-.container .searchbox .searchbox__icon {
+.containerSearch .searchbox .searchbox__icon {
   position: absolute;
   right: calc(53px / 2);
   top: 50%;
@@ -52,34 +58,39 @@
   pointer-events: none;
 }
 
-.container .searchbox .searchbox__icon path {
+.containerSearch .searchbox .searchbox__icon path {
   fill: #ffffff;
   transition: 0.4s linear;
 }
 
 
-.container .searchbox:focus-within {
+.containerSearch .searchbox:focus-within {
   max-width: 300px;
 }
 
-.container .searchbox:focus-within .searchbox__input {
+.containerSearch .searchbox:focus-within .searchbox__input {
   background-color: #FFF;
   padding-right: 50px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
-.container .searchbox:focus-within .searchbox__icon path {
+.containerSearch .searchbox:focus-within .searchbox__icon path {
   fill: #24233A;
 }
 
+.searchbox{
+  position: relative;
+  left: 13%;
+}
 
-/*Imágenes y grid*/
+/*Imágenes y flexbox*/
 img{
   margin-bottom: 2%;
   border-radius: 20%;
   padding: 2%;
-  height: 15 rem;
+  height: 17 rem;
   width: 33%;
 }
+
 
 section.containerImg{
   display: flex;
