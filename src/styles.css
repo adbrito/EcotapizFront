@@ -1,3 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('assets/estilos/sb-admin-2.min.css');
+/*@import url('assets/vendor/chart.js/Chart.bundle.js');
+@import url('assets/vendor/chart.js/Chart.bundle.min.js');
+@import url('assets/vendor/chart.js/Chart.js');
+@import url('assets/vendor/chart.js/Chart.min.js');
+@import url('assets/vendor/datatables/dataTables.bootstrap4.css');
+@import url('assets/vendor/');*/

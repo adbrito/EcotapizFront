@@ -1,9 +1,19 @@
 <div id="wrapper">
-<app-navbar></app-navbar>
-<app-sidebar>
-</app-sidebar>
-<app-dashboard></app-dashboard>
+    <app-sidebar></app-sidebar>
 
-<app-footer></app-footer>
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
 
+        <!-- Main Content -->
+        <div id="content">
+
+            <app-navbar></app-navbar>
+            <div class="container-fluid">
+                <app-dashboard></app-dashboard>
+
+            </div>
+        </div>
+        <app-footer></app-footer>
+
+    </div>
 </div>
