@@ -2,7 +2,8 @@
 
 /*Label Diseño*/
 div.disenio{
-  margin:30%;
+  position: relative;
+  /*padding-left: 5%;*/   /*Esto puede servir full para cuadrar diseño en la barra*/
   font-size: 40px;
   font-weight: bold;
   color: #ffffff;
@@ -27,7 +28,7 @@ div.disenio{
   position: relative;
   display: block;
   width: 100%;
-  max-width: 53px; /*Dejar en pixeles para que viva el search bar[JF]*/
+  max-width: 57px; /*Dejar en pixeles para que viva el search bar[JF]*/
   transition: 0.4s linear;
   overflow: hidden;
 }
@@ -65,7 +66,9 @@ div.disenio{
 
 
 .containerSearch .searchbox:focus-within {
-  max-width: 300px;
+  max-width: 50%;
+
+  /*max-width: 300px;*/
 }
 
 .containerSearch .searchbox:focus-within .searchbox__input {
@@ -79,7 +82,7 @@ div.disenio{
 
 .searchbox{
   position: relative;
-  left: 13%;
+  align-self: center;
 }
 
 /*Imágenes y flexbox*/
