@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { FijosDashboardComponent } from './fijos-dashboard.component';
 
+
+
+
+
 const routes: Routes = [{ path: '', component: FijosDashboardComponent }];
 
 @NgModule({
