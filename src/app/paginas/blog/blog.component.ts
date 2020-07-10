@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef, Inject, AfterViewInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import * as data from './recursos/prueba.json';
+import { Container } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-blog',
@@ -9,34 +10,40 @@ import * as data from './recursos/prueba.json';
 })
 export class BlogComponent implements OnInit,AfterViewInit {
 
+  contador: number = 0;
+
   constructor(private elementRef: ElementRef, private renderer: Renderer2, @Inject(DOCUMENT) private document) { 
     
   }
   ngAfterViewInit(): void {
-    this.loadPost();
+    this.loadPost(this.contador);
   }
 
   ngOnInit(): void {
     
   }
 
-  loadPost(){
-    var el = this.elementRef.nativeElement.querySelector('#d-post');
+  loadPost(contador: number){
+    var contenedor = this.elementRef.nativeElement.querySelector('#d-post');
+    $("div").remove(".example");
 
     let json: any = (data as any).default;
     let i: number;
 
     for(i=2; i>-1; i--){
 
-      let nombre = json[i].titulo
-      let autor = json[i].autor
-      let contenido = json[i].contenido
-      let fecha = json[i].fecha
+      let j:number = contador*3 + i;
 
-      console.log(json[i].titulo);
+      let nombre = json[j].titulo
+      let autor = json[j].autor
+      let contenido = json[j].contenido
+      let fecha = json[j].fecha
+      let src = json[i].src
 
-      let plantilla = `<div class="card mb-4">
-      <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+      console.log(json[j].titulo);
+
+      let plantilla = `<div class="card mb-4 example" >
+      <img class="card-img-top" src=${src} alt="Card image cap">
       <div class="card-body">
         <h2 class="card-title">${nombre}</h2>
         <p class="card-text">${contenido}</p>
@@ -48,8 +55,7 @@ export class BlogComponent implements OnInit,AfterViewInit {
       </div>
       </div>`
 
-      el.insertAdjacentHTML('afterbegin', plantilla);
-    
+      contenedor.insertAdjacentHTML('afterbegin', plantilla);
     }
   }
 }

@@ -15,3 +15,23 @@ body {
 .portfolio-item {
     margin-bottom: 30px;
 }
+
+.bgimg1 {
+    background-image: url('images/trapestry_1900x1080.jpg');
+}
+
+.bgimg2 {
+    background-image: url('images/trapesty1_1900x1080.jpg');
+}
+
+.bgimg3 {
+    background-image: url('images/trapestry2_1900x1080.jpg');
+}
+
+.bgimg-gen{
+    background-image: url('images/background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

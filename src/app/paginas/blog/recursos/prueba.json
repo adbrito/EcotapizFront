@@ -6,7 +6,8 @@
       "autor": "Lindsey Espinoza",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "fecha": "January 1, 2017"  
+      "fecha": "January 1, 2017",
+      "src":"/assets/images/blog/blog1.png"
     },
     {
       "_id": "5efc8c7f038d6cebed5a7e13",
@@ -15,7 +16,8 @@
       "autor": "Kimberley Reese",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "fecha": "January 1, 2017"
+      "fecha": "January 1, 2017",
+      "src":"/assets/images/blog/blog2.png"
     },
     {
       "_id": "5efc8c7f390af214c972a8b9",
@@ -24,7 +26,8 @@
       "autor": "Doreen Noel",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "fecha": "January 1, 2017"
+      "fecha": "January 1, 2017",
+      "src":"/assets/images/blog/blog3.png"
     },
     {
       "_id": "5efc8c7f2b4ae25e66cff095",
@@ -33,7 +36,8 @@
       "autor": "Fanny Foley",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "fecha": "January 1, 2017"
+      "fecha": "January 1, 2017",
+      "src":"/assets/images/blog/blog4.png"
     },
     {
       "_id": "5efc8c7f325e3ac20bf19415",
@@ -42,7 +46,8 @@
       "autor": "Pauline Hatfield",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "fecha": "January 1, 2017"
+      "fecha": "January 1, 2017",
+      "src":"/assets/images/blog/blog5.png"
     },
     {
       "_id": "5efc8c7ffdd44eb617192071",
@@ -51,7 +56,8 @@
       "autor": "Bessie Schultz",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "fecha": "January 1, 2017"
+      "fecha": "January 1, 2017",
+      "src":"/assets/images/blog/blog6.png"
     }
   ]
   
