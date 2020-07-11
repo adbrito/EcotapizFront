@@ -1,21 +1,26 @@
 @import "src/styles.scss";
 
 app-nav-simulador{
-    background-color: $col-primary;
-    width: 100%;
+        height: 10px;
+    
 }
 app-vista-prev{
-    background-color: blue;
+ 
     width: 50%;
 
-    z-index: -2;
+   
 }
 router-outlet{
     background-color:  $col-primary;
     width: 50%;
     height: 50%;
 }
-div{
+#submenu{
     display: flex;
     flex-direction: row;
+}
+#simulador{
+    background-image: url("../../../assets/3d/fondo.jpg");
+    background-size: 100% 100%;
+    
 }
