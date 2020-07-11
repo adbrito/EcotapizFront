@@ -1,9 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   background: #F2F2F2;
   padding: 0;
   maring: 0;
+
 }
 
 #price {
