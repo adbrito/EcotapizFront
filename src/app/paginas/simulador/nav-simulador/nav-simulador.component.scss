@@ -1,0 +1,50 @@
+@import "src/styles.scss";
+a:link, a:visited, a:active {
+  text-decoration:none;
+
+}
+
+.menu {
+    width: 100%;
+    float: center;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .menu ul li {
+    
+    border: 1px solid $col-primary;
+    border-radius: 15px;
+    display:inline-block;
+    list-style-type: none;
+    text-align: left;
+    width: 15%;
+    background-color: $col-secundary;
+    margin-right: -2%;
+    margin-top: 3%;
+  }
+
+
+  .menu ul li:hover {
+
+    width: 16%;
+
+
+    
+  }
+  
+  .menu ul li a {
+    
+    font-family:  $font-titulos;
+    list-style-type: none;
+    color: $col-five;
+    padding: 10px;
+  }
+  img{
+    border-radius: 15px;
+      width: 20px;
+      height: 20px;
+      margin-left: 2%;
+
+  }
+  

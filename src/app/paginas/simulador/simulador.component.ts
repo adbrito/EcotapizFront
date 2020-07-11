@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-simulador',
   templateUrl: './simulador.component.html',
-  styleUrls: ['./simulador.component.css']
+  styleUrls: ['./simulador.component.scss']
 })
 export class SimuladorComponent implements OnInit {
 

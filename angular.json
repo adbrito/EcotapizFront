@@ -24,8 +24,7 @@
               "src/assets"
             ],
             "styles": [
-
-              "src/styles.css",
+              "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
@@ -90,7 +89,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -126,5 +125,10 @@
   "defaultProject": "EcotapizFront",
   "cli": {
     "analytics": "46e1af78-7f7e-4778-bf63-c0c2f03deb8d"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
   }
 }
