@@ -31,19 +31,7 @@ app-materiales{
 */
 
 
-app-disenio{
-    position: relative;
-    left: 5%;
-    margin: 4%;
-    background-color: #96C0EB;
-    background-opacity: 50%;
-    width: 33%;
-    height: 20%;
-    justify-content: center;
-    border-radius: 13%;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-}
+
 
 
 /*Esto está dando problemas*/
