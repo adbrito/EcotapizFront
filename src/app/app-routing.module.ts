@@ -4,6 +4,7 @@ import { HomeComponent } from './paginas/home/home.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
 
 import { AppComponent } from './app.component';
+import { AcercaNosotrosComponent } from './paginas/acerca-nosotros/acerca-nosotros.component';
 
 
 
@@ -19,6 +20,12 @@ const routes: Routes =
   },
   {
     path: 'contacto',  component:ContactoComponent,
+  },
+  {
+    path: 'about',  component:AcercaNosotrosComponent,
+  },
+  {
+    path: 'search' ,loadChildren: () => import('./paginas/buscador/buscador.module').then(m => m.BuscadorModule),
   },
   { path: 'admin', loadChildren: () => import('./administrador/administrador.module').then(m => m.AdministradorModule) },
   { path: 'simulador', loadChildren: () => import('./paginas/simulador/simulador.module').then(m => m.SimuladorModule) },
