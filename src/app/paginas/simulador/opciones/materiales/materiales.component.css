@@ -77,13 +77,19 @@ h6 {
 
 .product-filter {
 	display: flex;
-	padding: 30px 0;
-  align-items: center;
+	padding: 5px 0;
+  
 }
 
 .sort {
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;
 	align-self: flex-end;
+	width: 80%;
+	margin-right: 5%;
+	margin-left: 6%
 }
 
 .collection-sort {
@@ -106,6 +112,8 @@ label {
 .products {
 	display: flex;
 	flex-wrap: wrap;
+	overflow: auto;
+	max-height: 400px ;
 }
 
 .product-card {
@@ -151,6 +159,7 @@ label {
 
 }
 
+
 @media ( max-width: 480px ) {
 
 	h1 {
@@ -169,7 +178,7 @@ label {
 
 
 
-/*
+
 Styling de las option boxes
 */
 

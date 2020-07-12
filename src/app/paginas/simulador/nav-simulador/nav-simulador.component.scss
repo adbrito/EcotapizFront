@@ -1,4 +1,5 @@
 @import "src/styles.scss";
+
 a:link, a:visited, a:active {
   text-decoration:none;
 
@@ -8,7 +9,6 @@ a:link, a:visited, a:active {
     width: 100%;
 
   }
-  
   ul{
     margin: 0px;
     padding: 0px;
@@ -19,34 +19,33 @@ justify-content: center;
    align-items: center;
   }
   .menu ul li {
+    background-color:transparent;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 justify-content: center;
    align-items: center;
     border: 1px solid $col-primary;
-    border-radius: 15px;
+    border-radius: 10px;
     list-style-type: none;
     width: 25%;
-    background-color: $col-secundary;
   
 
   }
 
 
   .menu ul li:hover {
-
-    width: 31%;
-
-
+    background-color: $col-secundary;   
+    width: 40%;
     
   }
+  a:hover{
+    color :$col-secundary;  }
   
   .menu ul li a {
     
     font-family:  $font-titulos;
     color: $col-five;
-    padding: 1%;
+    padding: 4%;
     font-size: 0.75rem;;
   }
   img{
@@ -55,4 +54,4 @@ justify-content: center;
       height: 20px;
 
   }
-  
+
