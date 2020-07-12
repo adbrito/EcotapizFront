@@ -5,7 +5,7 @@
 }
 
 .bgimg-gen{
-    background-image: url('../home/images/background.jpg');
+    background-image: url('../../../assets/home/images/background.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

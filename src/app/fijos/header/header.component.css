@@ -66,13 +66,16 @@
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
-  }
+}
   
-  .bounce {
-    animation-name: bounce-animation;
-    animation-duration: 2s;
-  }
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 2s;
+}
 
+.dropdown-menu > li:hover, .dropdown-menu > li:focus {
+  background-color: lightslategray;
+}
 
 
   

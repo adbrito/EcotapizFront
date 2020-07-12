@@ -7,6 +7,7 @@ import { HeaderComponent } from './fijos/header/header.component';
 import { FooterComponent } from './fijos/footer/footer.component';
 import { HomeComponent } from './paginas/home/home.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
+import { AcercaNosotrosComponent } from './paginas/acerca-nosotros/acerca-nosotros.component';
 
 
 
@@ -17,6 +18,7 @@ import { ContactoComponent } from './paginas/contacto/contacto.component';
     FooterComponent,
     HomeComponent,
     ContactoComponent,
+    AcercaNosotrosComponent,
   ],
   imports: [ 
     BrowserModule,
