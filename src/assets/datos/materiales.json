@@ -1,0 +1,130 @@
+{
+    "materiales": [
+        {
+            "nombre": "Americano",
+            "descripcion": "Americano, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":51
+        },
+        {
+            "nombre": "Campero",
+            "descripcion": "Campero",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":23
+        },
+        {
+            "nombre": "Conventri",
+            "descripcion": "Conventri",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":37
+        },
+        {
+            "nombre": "Doca",
+            "descripcion": "Doca, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":34
+        },
+        {
+            "nombre": "Mamut",
+            "descripcion": "Mamut, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":5
+        },
+        {
+            "nombre": "Tricot",
+            "descripcion": "Tricot, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":23
+        },
+        {
+            "nombre": "Americano",
+            "descripcion": "Americano, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":51
+        },
+        {
+            "nombre": "Campero",
+            "descripcion": "Campero",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":23
+        },
+        {
+            "nombre": "Conventri",
+            "descripcion": "Conventri",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":37
+        },
+        {
+            "nombre": "Doca",
+            "descripcion": "Doca, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":34
+        },
+        {
+            "nombre": "Mamut",
+            "descripcion": "Mamut, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":5
+        },
+        {
+            "nombre": "Tricot",
+            "descripcion": "Tricot, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":23
+        },
+        {
+            "nombre": "Americano",
+            "descripcion": "Americano, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":51
+        },
+        {
+            "nombre": "Campero",
+            "descripcion": "Campero",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":23
+        },
+        {
+            "nombre": "Conventri",
+            "descripcion": "Conventri",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":37
+        },
+        {
+            "nombre": "Doca",
+            "descripcion": "Doca, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":34
+        },
+        {
+            "nombre": "Mamut",
+            "descripcion": "Mamut, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":5
+        },
+        {
+            "nombre": "Tricot",
+            "descripcion": "Tricot, rombo, negro, diseño",
+            "precio": 5.7,
+            "img": "assets/ImagenesBorrar/Simulador_Materiales/CueroDummy.jpg",
+            "rankin":23
+        }
+    ]
+}

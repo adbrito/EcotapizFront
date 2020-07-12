@@ -1,0 +1,116 @@
+{
+    "autos": [
+        {
+            "nombre": "Nissan Versa",
+            "descripcion": "Nissan Versa, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":34
+        },
+        {
+            "nombre": "Chevrolet Aveo",
+            "descripcion": "Chevrolet Aveo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":74
+        },
+        {
+            "nombre": "Nissan NP300",
+            "descripcion": "Nissan NP300, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":4
+        },
+        {
+            "nombre": "Nissan March",
+            "descripcion": "Nissan March, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":3
+        },
+        {
+            "nombre": "Volkswagen Vento",
+            "descripcion": "Volkswagen Vento, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":347
+        },
+        {
+            "nombre": "Chevrolet Beat Notchback",
+            "descripcion": "Chevrolet Beat Notchback, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":332
+        },
+        {
+            "nombre": "KIA Rio Sedan",
+            "descripcion": "KIA Rio Sedan, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":32
+        },
+        {
+            "nombre": "Chevrolet Beat",
+            "descripcion": "Chevrolet Beat, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":345
+        },
+        {
+            "nombre": "Nissan Versa",
+            "descripcion": "Nissan Versa, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":340
+        },
+        {
+            "nombre": "Chevrolet Aveo",
+            "descripcion": "Chevrolet Aveo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":78
+        },
+        {
+            "nombre": "Nissan NP300",
+            "descripcion": "Nissan NP300, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":29
+        },
+        {
+            "nombre": "Nissan March",
+            "descripcion": "Nissan March, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":47
+        },
+        {
+            "nombre": "Volkswagen Vento",
+            "descripcion": "Volkswagen Vento, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":39
+        },
+        {
+            "nombre": "Chevrolet Beat Notchback",
+            "descripcion": "Chevrolet Beat Notchback, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":33
+        },
+        {
+            "nombre": "KIA Rio Sedan",
+            "descripcion": "KIA Rio Sedan, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":32
+        },
+        {
+            "nombre": "Chevrolet Beat",
+            "descripcion": "Chevrolet Beat, rombo, negro, diseño",
+            "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
+            "3d":"src/assets/3d/scene.glb",
+            "rankin":31
+        }
+    ]
+}

@@ -46,8 +46,8 @@ canvas;
   render() {
     requestAnimationFrame(this.render.bind(this));
     this.renderer.render(this.scene, this.camera);
-    console.log(this.camera.position.z,
-      this.camera.position.y,this.camera.position.x)
+    //console.log(this.camera.position.z,
+      //this.camera.position.y,this.camera.position.x)
   }
 
 

@@ -1,135 +1,33 @@
 <nav class="product-filter">
-	
 
 	<div class="sort">
 		<div class="collection-sort">
 			<label>Filtrar por:</label>
-			<select id="filter-by">
-				<option value="/">Todos las marcas</option>
-				<option value="/">BMW</option>
-				<option value="/">Chevrolet</option>
-				<option value="/">Ford</option>
-				<option value="/">KIA</option>
-				<option value="/">Mazda</option>
-				<option value="/">Nissan</option>
-				<option value="/">Volvo</option>
+			<select id="filter-by" #filter (change)='llenarDatos(filter.value)'>
+				<option [value]="tipo" *ngFor="let tipo of tipos">{{tipo}}</option>
 			</select>
 		</div>
 
 		<div class="collection-sort">
 			<label>Ordenamiento:</label>
-			<select id="sort-by">
-				<option value="/">Ninguno</option>
-				<option value="/">Alfabéticamente, A-Z</option>
-				<option value="/">Alfabéticamente, Z-A</option>
-				<option value="/">Mejor vendido</option>
-				<option value="/">Precio, ascendente</option>
-				<option value="/">Precio, descendente</option>
-				<option value="/">Promociones</option>
+			<select id="sort-by" #sorts (change)='ordenar(sorts.value)'>
+				<option value="Ninguno">Ninguno</option>
+				<option value="Alfabéticamente">Alfabéticamente, A-Z</option>
+				<option value="Mejor">Mejor vendido</option>
 			</select>
 		</div>
 	</div>
 </nav>
 
-<section class="products" >
-	<div class="product-card">
+<section class="products">
+	<div class="product-card" *ngFor="let auto of autos">
 		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg">
+			<img src={{auto.img}}>
 		</div>
 		<div class="product-info">
-			<h5>Moderno  </h5>
-			<h6>$19.99</h6>
+			<h6>{{auto.nombre}}</h6>
 		</div>
 	</div>
 
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy2.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Vieja escuela  </h5>
-			<h6>$14.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy3.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Lujo y confort  </h5>
-			<h6>$23.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Moderno  </h5>
-			<h6>$19.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy5.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Rombos bordados  </h5>
-			<h6>$12.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy3.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Lujo y confort  </h5>
-			<h6>$23.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Moderno  </h5>
-			<h6>$19.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy2.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Vieja escuela  </h5>
-			<h6>$14.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy3.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Lujo y confort  </h5>
-			<h6>$23.99</h6>
-		</div>
-	</div>
-
-	<div class="product-card">
-		<div class="product-image">
-			<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy5.jpg">
-		</div>
-		<div class="product-info">
-			<h5>Rombos bordados  </h5>
-			<h6>$12.99</h6>
-		</div>
-	</div>
 
 </section>

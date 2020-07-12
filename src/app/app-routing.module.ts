@@ -25,7 +25,11 @@ const routes: Routes =
   },
   
   { path: 'admin', loadChildren: () => import('./administrador/administrador.module').then(m => m.AdministradorModule) },
-  { path: 'simulador', loadChildren: () => import('./paginas/simulador/simulador.module').then(m => m.SimuladorModule) }];
+  { path: 'simulador', loadChildren: () => import('./paginas/simulador/simulador.module').then(m => m.SimuladorModule) },
+  {
+    path: '**',   redirectTo: 'home' ,
+  }
+];
 
 
 
