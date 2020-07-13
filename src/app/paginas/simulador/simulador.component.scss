@@ -1,0 +1,23 @@
+@import "src/styles.scss";
+
+app-vista-prev{
+    margin: 5%;
+}
+
+#submenu{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    min-width: 50%;
+    margin: 5%;
+}
+#simulador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../assets/3d/fondo.jpg");
+    background-size: 100% 100%;
+    
+}

@@ -1,0 +1,58 @@
+@import "src/styles.scss";
+a:link, a:visited, a:active {
+  text-decoration:none;
+
+}
+
+.menu {
+    width: 100%;
+
+  }
+  
+  ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    
+    flex-direction: row;
+justify-content: center;
+   align-items: center;
+  }
+  .menu ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+justify-content: center;
+   align-items: center;
+    border: 1px solid $col-primary;
+    border-radius: 15px;
+    list-style-type: none;
+    width: 25%;
+    background-color: $col-secundary;
+  
+
+  }
+
+
+  .menu ul li:hover {
+
+    width: 31%;
+
+
+    
+  }
+  
+  .menu ul li a {
+    
+    font-family:  $font-titulos;
+    color: $col-five;
+    padding: 1%;
+    font-size: 0.75rem;;
+  }
+  img{
+    border-radius: 15px;
+      width: 20px;
+      height: 20px;
+
+  }
+  

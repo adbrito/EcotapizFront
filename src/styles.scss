@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+
+$col-primary : #C60021;
+$col-secundary:#F6F6F8;
+$col-third: #E3E3E3;
+$col-for:#C1B6AC;
+$col-five:#3E3E3E;
+
+$font-path: "src/assets/fuentes";
+
+@font-face {
+    font-family: "Arvo-Regular";
+    src: url($font-path+"/Arvo-Regular.ttf");
+    }
+    
+    $font-titulos: "Arvo-Regular";
+
+    @font-face {
+        font-family: "Roboto-Regular";
+        src: url($font-path+"/Roboto-Regular.ttf");
+        }
+        
+        $font-parrafos: "Roboto-Regular";
+
+

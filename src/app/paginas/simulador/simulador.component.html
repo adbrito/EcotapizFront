@@ -1,5 +1,7 @@
-<app-nav-simulador></app-nav-simulador>
-<div>
-<app-vista-prev></app-vista-prev> 
-<app-modelo></app-modelo>
+<div id="simulador">
+    <app-vista-prev></app-vista-prev>
+    <div id="submenu">
+        <app-nav-simulador></app-nav-simulador>
+        <router-outlet name='app'></router-outlet>
+    </div>
 </div>

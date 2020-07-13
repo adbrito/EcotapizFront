@@ -9,6 +9,7 @@ import { HomeComponent } from './paginas/home/home.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { AcercaNosotrosComponent } from './paginas/acerca-nosotros/acerca-nosotros.component';
 
+import  {  SimuladorModule  }      from  './paginas/simulador/simulador.module' ;  // <- importar
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AcercaNosotrosComponent } from './paginas/acerca-nosotros/acerca-nosotr
   ],
   imports: [ 
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SimuladorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
