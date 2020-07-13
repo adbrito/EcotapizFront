@@ -10,7 +10,12 @@ export class NavSimuladorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+   
   }
-
+  ngAfterViewInit(){
+    $(".clickeable").click(function(e){
+      $(".activo").removeClass('activo').addClass( "clickeable" ); 
+      $(this).removeClass( "clickeable" ).addClass( "activo" );
+  });
+  }
 }

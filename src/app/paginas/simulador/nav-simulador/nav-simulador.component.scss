@@ -1,9 +1,5 @@
 @import "src/styles.scss";
 
-a:link, a:visited, a:active {
-  text-decoration:none;
-
-}
 
 .menu {
     width: 100%;
@@ -18,36 +14,50 @@ a:link, a:visited, a:active {
 justify-content: center;
    align-items: center;
   }
-  .menu ul li {
-    background-color:transparent;
+  .menu ul .clickeable {
+    font-family:  $font-titulos;
+    color: $col-five;
+    padding: 1%;
+    font-size: 0.75rem;
     display: flex;
     flex-direction: row;
-justify-content: center;
-   align-items: center;
+    align-items: center;
+    justify-items: center;
+    
+    background-color:transparent;
     border: 1px solid $col-primary;
     border-radius: 10px;
-    list-style-type: none;
     width: 25%;
-  
-
   }
+  .clickeable:focus ,.activo:focus{ 
+    outline: none; 
 
+}
 
-  .menu ul li:hover {
+  .menu ul .clickeable:hover {
     background-color: $col-secundary;   
     width: 40%;
     
   }
-  a:hover{
-    color :$col-secundary;  }
-  
-  .menu ul li a {
-    
+  .activo{
+    background-color: $col-secundary;   
+    width: 40%;
     font-family:  $font-titulos;
     color: $col-five;
-    padding: 4%;
-    font-size: 0.75rem;;
+    padding: 1%;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid $col-primary;
+    border-radius: 10px;
+ 
+
+
   }
+ 
+
   img{
     border-radius: 15px;
       width: 20px;

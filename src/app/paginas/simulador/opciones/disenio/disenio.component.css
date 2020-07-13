@@ -113,8 +113,7 @@ label {
 	display: flex;
 	flex-wrap: wrap;
 	overflow: auto;
-	max-height: 400px ;
-}
+	max-height: 500px ;}
 
 .product-card {
 	display: flex;
