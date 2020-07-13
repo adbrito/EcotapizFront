@@ -62,9 +62,6 @@ export class VistaPrevComponent implements OnInit {
 
     VistaPrevComponent.renderer.setSize(VistaPrevComponent.canvas.clientWidth, VistaPrevComponent.canvas.clientHeight);
 
-
-
-
     VistaPrevComponent.controls = new OrbitControls(VistaPrevComponent.camera, VistaPrevComponent.canvas); /*quitar VistaPrevComponent.canvas para habilitar el pato de la muerte*/
 
 
