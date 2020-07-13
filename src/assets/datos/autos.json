@@ -18,7 +18,7 @@
             "nombre": "Chevrolet Aveo",
             "descripcion": "Chevrolet Aveo, negro, diseño",
             "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
-            "gltf":"assets/3d/escanario.gltf",
+            "gltf":"assets/3d/esfera.glb",
             "rankin":74
         },
        
