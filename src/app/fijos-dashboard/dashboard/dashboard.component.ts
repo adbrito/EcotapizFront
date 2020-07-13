@@ -11,36 +11,52 @@ export class DashboardComponent implements OnInit {
   constructor() {  //STEP 2 - Chart Data
     const chartData = [
       {
-        label: "Venezuela",
-        value: "290"
+        label: "Enero",
+        value: "90"
       },
       {
-        label: "Saudi",
+        label: "Febrero",
         value: "260"
       },
       {
-        label: "Canada",
+        label: "Marzo",
         value: "180"
       },
       {
-        label: "Iran",
+        label: "Abril",
         value: "140"
       },
       {
-        label: "Russia",
+        label: "Mayo",
         value: "115"
       },
       {
-        label: "UAE",
+        label: "Junio",
         value: "100"
       },
       {
-        label: "US",
+        label: "Julio",
         value: "30"
       },
       {
-        label: "China",
+        label: "Agosto",
         value: "30"
+      },
+      {
+        label: "Septiembre",
+        value: "130"
+      },
+      {
+        label: "Octubre",
+        value: "170"
+      },
+      {
+        label: "Noviembre",
+        value: "190"
+      },
+      {
+        label: "Diciembre",
+        value: "210"
       }
     ];
     // STEP 3 - Chart Configuration

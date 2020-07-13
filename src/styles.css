@@ -2,6 +2,9 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 @import url('assets/estilos/sb-admin-2.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons&display=block');
 /*@import url('assets/vendor/chart.js/Chart.bundle.js');
 @import url('assets/vendor/chart.js/Chart.bundle.min.js');
 @import url('assets/vendor/chart.js/Chart.js');

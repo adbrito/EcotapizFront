@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-
+  open = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleside() {
+    this.open = !this.open;
+  }
 }
