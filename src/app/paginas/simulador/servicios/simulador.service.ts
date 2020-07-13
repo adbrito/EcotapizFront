@@ -1,12 +1,33 @@
 import { Injectable } from '@angular/core';
+import {VistaPrevComponent} from 'src/app/paginas/simulador/vista-prev/vista-prev.component'
 
 @Injectable({
   providedIn: 'root'
 })
 export class SimuladorService {
   public static pathDatos: string = 'assets/datos/';
+  public  simulacion = {
+    auto: null,
+    disenio: null,
+    materiales: [],
 
-  constructor() { }
+  }
+ 
+
+
+
+  constructor( ) { 
+  }
+
+
+  public  addAuto(auto){
+    this.simulacion.auto=auto;
+    VistaPrevComponent.cambiarObjeto(auto.gltf);
+  }
+  public  addMaterial( material){
+    this.simulacion.materiales.push(material);
+    VistaPrevComponent.cambiarMaterial(material);
+  }
 
   public static getMateriales(busqueda: string, cb) {
     let retorno = [];

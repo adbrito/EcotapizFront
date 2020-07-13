@@ -10,9 +10,7 @@ import { SimuladorService } from 'src/app/paginas/simulador/servicios/simulador.
 export class ModeloComponent implements OnInit {
   autos = [];
   tipos = [];
-  simuladorService;
-  constructor(simuladorService: SimuladorService) {
-
+  constructor(public simuladorService: SimuladorService) {
   }
 
   ngOnInit(): void {
