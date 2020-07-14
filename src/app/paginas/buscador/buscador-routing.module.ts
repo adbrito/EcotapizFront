@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { BuscadorComponent } from './buscador.component';
 
 const routes: Routes = [
@@ -12,7 +12,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    RouterModule.forChild(routes),
+  ],
+  exports: [RouterModule]
 })
 export class BuscadorRoutingModule { }

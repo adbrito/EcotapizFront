@@ -1,6 +1,6 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef, Inject, AfterViewInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import * as data from '../recursos/posts.json';
+import * as data from '../../../../assets/recursos-datos/posts.json';
 import { Container } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({

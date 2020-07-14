@@ -24,6 +24,7 @@
     "@types/jquery": "^3.5.0",
     "@types/three": "^0.103.2",
     "bootstrap": "^4.5.0",
+    "intro.js": "^2.9.3",
     "materialize-css": "^1.0.0-rc.2",
     "rxjs": "~6.5.4",
     "three": "^0.117.1",

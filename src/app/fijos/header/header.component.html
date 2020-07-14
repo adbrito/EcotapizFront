@@ -1,19 +1,31 @@
 <nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-dark">
-    <div class="container-fluid collapse navbar-collapse">
-    <span class="navbar-brand mb-0 h1 text-light">ECOTAPIZ</span>
-      <ul id="barra" class="nav navbar-nav ml-auto">
-        <div class="dropdown">
-          <li class="nav-item mr-2 hoverable nav-link text-light dropdown-toggle" data-toggle="dropdown">Principal</li>
-          <ul class="dropdown-menu bg-dark">
-            <li><a id="len1" class="text-light pl-1" routerLink="/home" routerLinkActive="active">Home</a></li>
-            <li><a id="len4" routerLink="/about" routerLinkActive="active" class="text-light pl-1">Sobre Nosotros</a></li>
-          </ul>
-        </div>
-        <li class="nav-item mr-2"><a id="len2" class="hoverable nav-link text-light" [routerLink]="['/simulador/app',{outlets:{'app': 'modelo'}}]" routerLinkActive="active">Simulador</a></li>
-        <li class="nav-item mr-2"><a id="len3" class="hoverable nav-link text-light" routerLink="/catalogo" routerLinkActive="active">Productos</a></li>
-        <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link text-light" routerLink="/blog" routerLinkActive="active">Noticias</a></li>
-        <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link text-light" routerLink="/contacto" routerLinkActive="active">Contacto</a></li>
-        <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link text-light" routerLink="/admin" routerLinkActive="active">Login</a></li>
-      </ul>
-    </div>
-  </nav>
+  <span class="navbar-brand mb-0 h1 text-light">ECOTAPIZ</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul id="barra" class="nav navbar-nav ml-auto">
+      <div class="dropdown">
+        <li class="nav-item mr-2 hoverable nav-link text-light dropdown-toggle" data-toggle="dropdown" id="step7">
+          Principal</li>
+        <ul class="dropdown-menu bg-dark">
+          <li class="nav-item mr-2"><a id="len1" class="hoverable nav-link text-light" routerLink="/home"
+              routerLinkActive="active">Home</a></li>
+          <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link text-light" routerLink="/about"
+              routerLinkActive="active">Sobre Nosotros</a></li>
+          <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link text-light" routerLink="/contacto"
+              routerLinkActive="active">Contacto</a></li>
+        </ul>
+      </div>
+      <li class="nav-item mr-2" id="step8"><a id="len2" class="hoverable nav-link text-light"
+          [routerLink]="['/simulador/app',{outlets:{'app': 'modelo'}}]" routerLinkActive="active">Simulador</a></li>
+      <li class="nav-item mr-2" id="step9"><a id="len3" class="hoverable nav-link text-light" routerLink="/catalogo"
+          routerLinkActive="active">Productos</a></li>
+      <li class="nav-item mr-2" id="step10"><a id="len4" class="hoverable nav-link text-light" routerLink="/blog"
+          routerLinkActive="active">Noticias</a></li>
+      <li class="nav-item mr-2" id="step11"><a id="len4" class="hoverable nav-link text-light" routerLink="/admin"
+          routerLinkActive="active">Login</a></li>
+    </ul>
+  </div>
+</nav>

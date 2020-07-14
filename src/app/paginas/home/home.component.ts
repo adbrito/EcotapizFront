@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
-import * as data from '../main-blog/recursos/posts.json';
-import * as data2 from '../main-catalogo/recursos/productos.json';
+import * as introJs from 'intro.js/intro.js';
+import * as data from '../../../assets/recursos-datos/posts.json';
+import * as data2 from '../../../assets/recursos-datos/productos.json';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +10,82 @@ import * as data2 from '../main-catalogo/recursos/productos.json';
 })
 export class HomeComponent implements OnInit,AfterViewInit {
 
-  constructor(private elementRef: ElementRef) { }
+  introJS = introJs();
+
+  constructor(private elementRef: ElementRef) { 
+  }
 
   ngOnInit(): void {
+    this.introJS.start();
   }
 
   ngAfterViewInit(): void {
     this.loadNoticias(0);
     this.loadCatalogo(0);
+  }
+
+  startSteps(){
+    this.introJS.setOptions({
+      steps: [
+        {
+          element: '#step1',
+          intro: 'Welcome to your new app!',
+          position: 'bottom'
+        },
+        {
+          element: '#step2',
+          intro: "Ok, wasn't that fun?",
+          position: 'right'
+        },
+        {
+          element: '#step3',
+          intro: "let's keep going",
+          position: 'top'
+        },
+        {
+          element: '#step4',
+          intro: 'More features, more fun.',
+          position: 'right'
+        },
+        {
+          element: '#step5',
+          intro: 'More features, more fun.',
+          position: 'right'
+        },
+        {
+          element: '#step6',
+          intro: 'More features, more fun.',
+          position: 'right'
+        },
+        {
+          element: '#step7',
+          intro: 'More features, more fun.',
+          position: 'right'
+        },
+        {
+          element: '#step8',
+          intro: 'More features, more fun.',
+          position: 'right'
+        },
+        {
+          element: '#step9',
+          intro: 'More features, more fun.',
+          position: 'right'
+        },
+        {
+          element: '#step10',
+          intro: 'More features, more fun.',
+          position: 'right'
+        },
+        {
+          element: '#step11',
+          intro: 'More features, more fun.',
+          position: 'right'
+        }
+      ],
+      hidePrev: true,
+      hideNext: false
+    }).start();
   }
 
   loadNoticias(contador: number){
@@ -87,5 +156,7 @@ export class HomeComponent implements OnInit,AfterViewInit {
 
       contenedor.insertAdjacentHTML('afterbegin', plantilla);
     }
+
+    
   }
 }

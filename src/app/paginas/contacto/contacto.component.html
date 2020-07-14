@@ -2,16 +2,9 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3 text-light">Contact
-      <small>Subheading</small>
+    <h1 class="mt-4 mb-3 text-light">Contacto
+      <small></small>
     </h1>
-
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">Contact</li>
-    </ol>
 
     <!-- Content Row -->
     <div class="row">
@@ -22,7 +15,7 @@
       </div>
       <!-- Contact Details Column -->
       <div class="col-lg-4 mb-2 text-light">
-        <h3 class="pt-3">Contact Details</h3>
+        <h3 class="pt-3">Detalle del Contacto: </h3>
         <p>
           3481 Melrose Place
           <br>Beverly Hills, CA 90210
@@ -47,30 +40,43 @@
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row text-light">
       <div class="col-lg-8 mb-4">
-        <h3>Send us a Message</h3>
+        <h3>Envienos su mensaje: </h3>
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Full Name:</label>
+              <label>Nombre:</label>
               <input type="text" class="form-control bg-dark text-light" id="name" required data-validation-required-message="Please enter your name.">
               <p class="help-block"></p>
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Phone Number:</label>
-              <input type="tel" class="form-control bg-dark text-light" id="phone" required data-validation-required-message="Please enter your phone number.">
+              <label>Fecha de Nacimiento:</label>
+              <input type="date" class="form-control bg-dark text-light" id="date" required data-validation-required-message="Please enter your phone number.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Email Address:</label>
+              <label>Seleccione su lugar de Nacimiento:</label>
+              <!--<input type="button" class="form-control bg-dark text-light dropdown-toggle" id="place dropdownMenuButton" required data-validation-required-message="Please enter your email address." data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+              <div class="dropdown d-inline">
+                <button class=" btn form-control btn-primary dropdown-toggle" type="button" id="dropdownMenuButton place" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccione su lugar de origen
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
+                    <li class="dropdown-item" >Mostrar Todos</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Correo Electronico:</label>
               <input type="email" class="form-control bg-dark text-light" id="email" required data-validation-required-message="Please enter your email address.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Message:</label>
+              <label>Mensaje:</label>
               <textarea rows="10" cols="100" class="form-control bg-dark text-light" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
             </div>
           </div>

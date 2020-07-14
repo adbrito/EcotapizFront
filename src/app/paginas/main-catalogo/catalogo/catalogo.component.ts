@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
-import * as data from '../recursos/productos.json'
+import * as data from '../../../../assets/recursos-datos/productos.json'
 import { Router } from '@angular/router';
 
 @Component({

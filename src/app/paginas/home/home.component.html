@@ -1,66 +1,70 @@
-  <div class="bgimg-gen">
-    <!-- Page Content -->
+<div class="bgimg-gen">
+  <!-- Page Content -->
   <div class="container bgimg-gen">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active bgimg1">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item bgimg2">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item bgimg3">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
-            </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" id="step2">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active bgimg1">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>First Slide</h3>
+            <p>This is a description for the first slide.</p>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item bgimg2">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Second Slide</h3>
+            <p>This is a description for the second slide.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item bgimg3">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Third Slide</h3>
+            <p>This is a description for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <h1 class="my-4 text-light">Bienvenidos a Ecotapiz</h1>
-
+    <h1 class="my-4 text-light" id="step1">Bienvenidos a Ecotapiz</h1>
+    <button class="btn btn-primary" (click)="startSteps()">SHOW ME
+      STEPS</button>
     <!-- Marketing Icons Section -->
-    <div>
+    <div id="step3">
       <h2 class="my-4 text-light">Noticias</h2>
       <div class="row" id="contenedor-noticias">
-        
+
       </div>
     </div>
     <!-- /.row -->
 
     <!-- Portfolio Section -->
-    <h2 class="my-4 text-light">Productos mas vendidos</h2>
+    <div id="step4">
+      <h2 class="my-4 text-light">Productos mas vendidos</h2>
 
-    <div class="row pb-5" id="contenedor-catalogo">
-      
+      <div class="row pb-5" id="contenedor-catalogo">
+
+      </div>
     </div>
     <!-- /.row -->
 
     <!-- Features Section -->
     <div class="row bg-dark rounded">
-      <div class="col-lg-6 pt-3">
+
+      <div class="col-lg-6 pt-3" id="step5">
         <h2 class="text-light">Modern Business Features</h2>
         <p class="text-light">The Modern Business template by Start Bootstrap includes:</p>
         <ul>
@@ -72,17 +76,22 @@
           <li class="text-light">Working contact form with validation</li>
           <li class="text-light">Unstyled page elements for easy customization</li>
         </ul>
-        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non
+          cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia
+          dolorum ducimus unde.</p>
       </div>
       <div class="col-lg-6 pt-3">
         <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
       </div>
+
       <div class="col-md-8 pt-4 text-right">
-        <p class="text-light">Para ver nuestra informacion de contacto o enviar un mensaje, presione en Ir a contacto</p>
+        <p class="text-light">Para ver nuestra informacion de contacto o enviar un mensaje, presione en Ir a contacto
+        </p>
       </div>
-      <div class="col-md-4 pt-3 pb-3">
+      <div class="col-md-4 pt-3 pb-3"  id="step6">
         <a class="btn btn-lg btn-secondary btn-block text-light" routerLink="/contacto">Ir a Contacto</a>
       </div>
+
     </div>
     <!-- /.row -->
 
@@ -90,4 +99,4 @@
 
   </div>
   <!-- /.container -->
-  </div>
+</div>
