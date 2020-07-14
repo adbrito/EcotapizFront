@@ -11,14 +11,14 @@
             "nombre": "Nissan Versa",
             "descripcion": "Nissan Versa, negro, diseño",
             "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
-            "gltf":"assets/3d/duck/Duck.gltf",
+            "gltf":"assets/3d/asiento4.glb",
             "rankin":34
         },
         {
             "nombre": "Chevrolet Aveo",
             "descripcion": "Chevrolet Aveo, negro, diseño",
             "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
-            "gltf":"assets/3d/esfera.glb",
+            "gltf":"assets/3d/auto2.glb",
             "rankin":74
         },
        
@@ -26,7 +26,7 @@
             "nombre": "Nissan March",
             "descripcion": "Nissan March, negro, diseño",
             "img": "assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg",
-            "gltf":"src/assets/gltf/scene.glb",
+            "gltf":"assets/auto3.glb",
             "rankin":3
         },
         {

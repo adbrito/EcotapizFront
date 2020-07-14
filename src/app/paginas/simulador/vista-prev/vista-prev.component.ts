@@ -26,6 +26,7 @@ export class VistaPrevComponent implements OnInit {
   static mesh;
   static controls;
   static path = 'assets/3d/scene.glb';
+  static materials=[];
 
   static isMouseDown = false;
   constructor() {
@@ -39,6 +40,7 @@ export class VistaPrevComponent implements OnInit {
   }
 
   static cambiarObjeto(url: string) {
+    VistaPrevComponent.crearMateriales();
     let me = VistaPrevComponent;
 
     VistaPrevComponent.scene = new THREE.Scene();
@@ -66,11 +68,17 @@ export class VistaPrevComponent implements OnInit {
 
 
     //光源を作成
-    var light = new THREE.DirectionalLight("#c1582d", 1);
-    var ambient = new THREE.AmbientLight("#85b2cd");
+   var light = new THREE.DirectionalLight( 0xffffff, 0.5);
+    var ambient = new THREE.AmbientLight(0xffffff, 0.2);
     light.position.set(0, -70, 100).normalize();
     VistaPrevComponent.scene.add(light);
+
     VistaPrevComponent.scene.add(ambient);
+
+    //TEXTURAAA-----------------------------------
+    var material = new THREE.MeshPhongMaterial();
+    material.map    = THREE.ImageUtils.loadTexture('assets/3d/plata.png');
+   // -------------------------------------------
 
     var texture = new THREE.Texture();
     var manager = new THREE.LoadingManager();
@@ -86,9 +94,12 @@ export class VistaPrevComponent implements OnInit {
       // called when the resource is loaded
       function (gltf) {
         me.mesh = gltf.scene;
+        console.log(me.mesh.material);
         me.mesh.scale.set(20, 20, 20);
         me.scene.add(me.mesh);
         console.log("mesh: ", me.mesh);
+        var carModel = gltf.scene.children[ 0 ];
+				carModel.getObjectByName( 'par1' ).material = VistaPrevComponent.materials[0];
         //      VistaPrevComponent.scene.add( gltf.scene );
 
         //gltf.animations; // Array<THREE.AnimationClip>
@@ -124,7 +135,14 @@ export class VistaPrevComponent implements OnInit {
   }
 
 
+static crearMateriales(){
+  new THREE.TextureLoader().load( 'assets/3d/plata.png', function ( texture ) {
+    var material = new THREE.MeshBasicMaterial( { map: texture } );
+    VistaPrevComponent.materials.push(material);
+  });
 
+
+}
 
   static render() {
     requestAnimationFrame(VistaPrevComponent.render.bind(VistaPrevComponent));
