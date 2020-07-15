@@ -17,6 +17,9 @@ import { ModeloComponent } from './modelo/modelo.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
 import { DisenioComponent } from './disenio/disenio.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { ReporteClientesComponent } from './reporte-clientes/reporte-clientes.component';
+import { ReportePedidosComponent } from './reporte-pedidos/reporte-pedidos.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
@@ -25,7 +28,7 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 
 @NgModule({
   declarations: [FijosDashboardComponent, FooterComponent, NavbarComponent, 
-    SidebarComponent, DashboardComponent, ModeloComponent, PedidosComponent, DisenioComponent, ClientesComponent],
+    SidebarComponent, DashboardComponent, ModeloComponent, PedidosComponent, DisenioComponent, ClientesComponent, ReporteClientesComponent, ReportePedidosComponent, BlogComponent],
   imports: [
     CommonModule,
     FijosDashboardRoutingModule,
