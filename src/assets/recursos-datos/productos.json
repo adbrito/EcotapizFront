@@ -3,10 +3,9 @@
       "_id": "5efc8c7fed3f80f121f6a523",
       "index": 0,
       "titulo": "Tapizado 1",
-      "link": "/",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "precio": "$24,99",
+      "precio": "24,99",
       "calificacion": "5",
       "src":"/assets/images/catalogo/producto.jpg"
     },
@@ -14,10 +13,9 @@
       "_id": "5efc8c7f038d6cebed5a7e13",
       "index": 1,
       "titulo": "Tapizado 2",
-      "link": "/",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "precio": "$23,99",
+      "precio": "23,99",
       "calificacion": "5",
       "src":"/assets/images/catalogo/producto1.jpg"
     },
@@ -25,10 +23,9 @@
       "_id": "5efc8c7f390af214c972a8b9",
       "index": 2,
       "titulo": "Tapizado 3",
-      "link": "/",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "precio": "$24,50",
+      "precio": "24,50",
       "calificacion": "5",
       "src":"/assets/images/catalogo/producto2.jpg"
     },
@@ -36,10 +33,9 @@
       "_id": "5efc8c7f2b4ae25e66cff095",
       "index": 3,
       "titulo": "Tapizado 4",
-      "link": "/",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "precio": "$30,00",
+      "precio": "30,00",
       "calificacion": "5",
       "src":"/assets/images/catalogo/producto3.jpg"
     },
@@ -47,10 +43,9 @@
       "_id": "5efc8c7f325e3ac20bf19415",
       "index": 4,
       "titulo": "Tapizado 5",
-      "link": "/",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "precio": "$35,99",
+      "precio": "35,99",
       "calificacion": "5",
       "src":"/assets/images/catalogo/producto4.jpg"
     },
@@ -58,11 +53,10 @@
       "_id": "5efc8c7ffdd44eb617192071",
       "index": 5,
       "titulo": "Tapizado 6",
-      "link": "/",
       "keywords": "sit excepteur voluptate fugiat sunt",
       "contenido": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
-      "precio": "$49,99",
-      "calificacion": "$50,00",
+      "precio": "49,99",
+      "calificacion": "5",
       "src":"/assets/images/catalogo/producto5.jpg"
     }
   ]

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-dark">
+<nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-dark fixed-top">
   <span class="navbar-brand mb-0 h1 text-light">ECOTAPIZ</span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
       <li class="nav-item mr-2" id="step9"><a id="len3" class="hoverable nav-link text-light" routerLink="/catalogo"
           routerLinkActive="active">Productos</a></li>
       <li class="nav-item mr-2" id="step10"><a id="len4" class="hoverable nav-link text-light" routerLink="/blog"
-          routerLinkActive="active">Noticias</a></li>
+        [routerLink]="['/blog/aux',{outlets:{'aux': 'main'}}]" routerLinkActive="active">Noticias</a></li>
       <li class="nav-item mr-2" id="step11"><a id="len4" class="hoverable nav-link text-light" routerLink="/admin"
           routerLinkActive="active">Login</a></li>
     </ul>

@@ -9,7 +9,7 @@
       <div class="row">
         
         <div class="col-md-8">
-            <router-outlet name="blog-child"></router-outlet>
+            <router-outlet name="aux"></router-outlet>
         </div>
         
         <!-- Sidebar Widgets Column -->
@@ -36,7 +36,7 @@
                 <div class="col-lg-6">
                   <ul class="list-unstyled mb-0">
                     <li>
-                      <a href="#">Web Design</a>
+                      <a [routerLink]="['/blog/aux',{outlets:{'aux': 'post'}}]">Web Design</a>
                     </li>
                     <li>
                       <a href="#">HTML</a>

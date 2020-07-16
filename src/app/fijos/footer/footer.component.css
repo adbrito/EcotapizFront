@@ -1,6 +1,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 60px 0;
+    padding: 25px 0;
 }
 
 section .section-title {
@@ -16,7 +16,7 @@ section .section-title {
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color:#ffffff;
 }
 #footer a {
