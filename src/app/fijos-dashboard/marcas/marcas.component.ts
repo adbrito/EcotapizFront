@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-disenio',
-  templateUrl: './disenio.component.html',
-  styleUrls: ['./disenio.component.css']
+  selector: 'app-marcas',
+  templateUrl: './marcas.component.html',
+  styleUrls: ['./marcas.component.css']
 })
-export class DisenioComponent implements OnInit {
-
-
-
+export class MarcasComponent implements OnInit {
   showModal= false;
   showMListado=false;
   constructor() { }

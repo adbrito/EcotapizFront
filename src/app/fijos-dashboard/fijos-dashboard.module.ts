@@ -13,13 +13,15 @@ import { FusionChartsModule } from "angular-fusioncharts";
 import * as FusionCharts from "fusioncharts";
 import * as charts from "fusioncharts/fusioncharts.charts";
 import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-import { ModeloComponent } from './modelo/modelo.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
 import { DisenioComponent } from './disenio/disenio.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ReporteClientesComponent } from './reporte-clientes/reporte-clientes.component';
 import { ReportePedidosComponent } from './reporte-pedidos/reporte-pedidos.component';
 import { BlogComponent } from './blog/blog.component';
+import { SimuladorComponent } from './simulador/simulador.component';
+import { MaterialesComponent } from './materiales/materiales.component';
+import { MarcasComponent } from './marcas/marcas.component';
 
 
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
@@ -28,7 +30,7 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 
 @NgModule({
   declarations: [FijosDashboardComponent, FooterComponent, NavbarComponent, 
-    SidebarComponent, DashboardComponent, ModeloComponent, PedidosComponent, DisenioComponent, ClientesComponent, ReporteClientesComponent, ReportePedidosComponent, BlogComponent],
+    SidebarComponent, DashboardComponent, PedidosComponent, DisenioComponent, ClientesComponent, ReporteClientesComponent, ReportePedidosComponent, BlogComponent, SimuladorComponent, MaterialesComponent, MarcasComponent],
   imports: [
     CommonModule,
     FijosDashboardRoutingModule,

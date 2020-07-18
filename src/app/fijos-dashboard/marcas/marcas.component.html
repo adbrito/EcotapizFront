@@ -1,0 +1,254 @@
+<div class="container-btn">
+	<div class="titulo">
+		<h1 class="h3 mb-4 text-gray-800">Marcas de auto</h1>
+	</div>
+	<div class="botones">
+		<div class="boton-izq">
+			<div class="agrupa-btn-add" data-toggle="modal" data-target="#myModal" (click)="showModel()">
+				<button type=" button" class="btn btn-outline-dark">
+					<i class="material-icons center">add</i>
+				</button>
+			</div>
+			<div class="agrupa-btn-add">
+				<p>Agregar auto</p>
+			</div>
+		</div>
+
+		<div class="boton-der">
+			<div class="agrupa-btn-add" data-toggle="modal" data-target="#myModal-verlistado" (click)="showListado()">
+				<button type=" button" class="btn btn-outline-dark">
+					<i class="material-icons center">remove_red_eye</i>
+				</button>
+			</div>
+			<div class="agrupa-btn-add">
+				<p>Ver marcas de autos existentes</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div *ngIf="showModal">
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form name="form-marca-auto" class="form-marca-auto">
+						<p class="titulo">Marca del auto</p>
+						<div class="group-element">
+							<label for="nombre" class="lbl-caracter">Nombre:</label>
+							<input type="text" name="nombre" class="estilo-input-form">
+						</div>
+						<div>
+							<label for="descripcion" class="lbl-caracter">Descripción:</label>
+							<input type="text" name="descripcion" class="estilo-input-form">
+						</div>
+						<div>
+							<label for="marca" class="lbl-caracter">Marca:</label>
+							<input type="text" name="marca" class="estilo-input-form">
+						</div>
+						<div>
+							<label for="modelo" class="lbl-caracter">Modelo:</label>
+							<input type="text" name="modelo" class="estilo-input-form">
+						</div>
+						<div>
+							<label for="anio" class="lbl-caracter">Año:</label>
+							<input type="text" name="anio" class="estilo-input-form"></div>
+						<div>
+							<label for="loadimg" class="lbl-caracter">Subir imagen:</label>
+							<input type="file" name="loadimg" class="estilo-file-form"></div>
+						<div>
+							<label for="load3d" class="lbl-caracter">Subir archivo 3D:</label>
+							<input type="file" name="load3d" class="estilo-file-form"></div>
+						
+						<div class="contenedor-btn">
+							<input type="submit" id="guardar" name="guardar" value="Guardar" class="btn btn-dark"/>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <div>
+    <label>Nombre:</label>
+    <label>Descripción:</label>
+    <label>Subir archivo:</label>
+</div> -->
+<!-- 
+<div class="con-cajas">
+    <div class="cajas">
+        <div class="">
+          imagen
+        </div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+      </div>
+      <div class="cajas">
+        <div class="">
+          imagen
+        </div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="cajas">
+        <div class="">
+          imagen
+        </div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamsed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+	  </div> -->
+
+
+
+
+
+<div *ngIf="showMListado">
+	<div id="myModal-verlistado" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<nav class="product-filter">
+						<h1>Modelo de asiento</h1>
+
+						<div class="sort">
+							<div class="collection-sort">
+								<label>Filtrar por:</label>
+								<select name="dataTable_length" aria-controls="dataTable"
+									class="custom-select custom-select-sm form-control form-control-sm">
+									<option value="/">Todos las marcas</option>
+									<option value="/">BMW</option>
+									<option value="/">Chevrolet</option>
+									<option value="/">Ford</option>
+									<option value="/">KIA</option>
+									<option value="/">Mazda</option>
+									<option value="/">Nissan</option>
+									<option value="/">Volvo</option>
+								</select>
+							</div>
+
+							<div class="collection-sort">
+								<label>Ordenamiento:</label>
+								<select name="dataTable_length" aria-controls="dataTable"
+									class="custom-select custom-select-sm form-control form-control-sm">
+									<option value="/">Ninguno</option>
+									<option value="/">Alfabéticamente, A-Z</option>
+									<option value="/">Alfabéticamente, Z-A</option>
+									<option value="/">Mejor vendido</option>
+									<option value="/">Precio, ascendente</option>
+									<option value="/">Precio, descendente</option>
+									<option value="/">Promociones</option>
+								</select>
+							</div>
+						</div>
+					</nav>
+
+					<section class="products">
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Moderno [PLACEHOLDER]</h5>
+								<h6>$19.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy2.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Vieja escuela [PLACEHOLDER]</h5>
+								<h6>$14.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy3.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Lujo y confort [PLACEHOLDER]</h5>
+								<h6>$23.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Moderno [PLACEHOLDER]</h5>
+								<h6>$19.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy5.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Rombos bordados [PLACEHOLDER]</h5>
+								<h6>$12.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy3.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Lujo y confort [PLACEHOLDER]</h5>
+								<h6>$23.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy1.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Moderno [PLACEHOLDER]</h5>
+								<h6>$19.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy2.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Vieja escuela [PLACEHOLDER]</h5>
+								<h6>$14.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy3.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Lujo y confort [PLACEHOLDER]</h5>
+								<h6>$23.99</h6>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-image">
+								<img src="./assets/ImagenesBorrar/Simulador_Modelo/ModeloDummy5.jpg">
+							</div>
+							<div class="product-info">
+								<h5>Rombos bordados [PLACEHOLDER]</h5>
+								<h6>$12.99</h6>
+							</div>
+						</div>
+
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,18 +1,6 @@
-
-.btn-add{
-    text-decoration:none;
-    font-weight: 600;
-    font-size: 20px;
-    color:#333333;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left:40px;
-    padding-right:40px;
-    background-color:white;
-    border-color: blue;
-    border-width: 3px;
-    border-style: solid;
-    border-radius:35px;}
+:root{
+	--color-rojo: #ff0000;
+}
 
 /*
     .cajas{
@@ -204,7 +192,7 @@ Styling de las option boxes
 */
 
 
-select {
+/* select {
 	display: block;
 	font-size: 16px;
 	font-family: sans-serif;
@@ -228,7 +216,7 @@ select {
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
 	background-size: .65em auto, 100%;
-}
+} */
 select::-ms-expand {
 	display: none;
 }
@@ -245,3 +233,94 @@ select:focus {
 select option {
 	font-weight:normal;
 }
+
+.btn-outline-dark{
+	width: 50px;
+	border-radius: 50%;
+	font-size: 20px;
+	height: 50px;
+	border: 2px solid;
+}
+
+.agrupa-btn-add{
+	display:flex;
+	padding-left: 50px;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+.container{
+	display: inline-block;
+}
+
+
+
+.modal-content{
+	max-height: 100%;
+	min-width: 60%;
+}
+
+.titulo{
+	text-align: center;
+  }
+
+  .botones{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  }
+
+  .lbl-caracter{
+	  font-size: small;
+	  font-family: "Arvo";
+	   
+	  text-transform: none;
+	  font-weight: bold;
+	  padding-top: 5px;
+
+  } 
+
+
+
+  
+  .contenedor-btn{
+	  display: flex;
+	  justify-content: center;
+  }
+
+  .titulo{
+	font-family: "Arvo";
+	font-weight: bold;
+	  text-align: center;
+  }
+
+  .group-element{
+	  display: inline;
+  }
+
+  .estilo-file-form{
+float: right;
+  }
+
+  .estilo-input-form{
+	float: right;
+	  border: 1px solid gray;
+	  border-radius: 6px;
+  }
+
+ .modal-body{
+	 
+	border:2px solid gray;
+
+ }
+
+ 
+ .btn-dark:hover{
+	 background: var(--color-rojo);
+	 border: var(--color-rojo);
+ }
