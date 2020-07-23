@@ -6,6 +6,13 @@ import { MainCatalogoComponent } from './main-catalogo.component';
 import { SidebarSearcherComponent } from './sidebar-searcher/sidebar-searcher/sidebar-searcher.component';
 import { CatalogoItemComponent } from './catalogo-item/catalogo-item.component';
 import { CatalogoDirective } from './catalogo.directive';
+import { OnCreateDirective } from './on-create.directive';
+import { Catalogo2Directive } from './catalogo2.directive';
+import { Catalogo3Directive } from './catalogo3.directive';
+import { Catalogo4Directive } from './catalogo4.directive';
+import { Catalogo5Directive } from './catalogo5.directive';
+import { Catalogo6Directive } from './catalogo6.directive';
+import { CatalogoDetailComponent } from './catalogo-detail/catalogo-detail.component';
 
 
 @NgModule({
@@ -14,7 +21,14 @@ import { CatalogoDirective } from './catalogo.directive';
     CatalogoComponent,
     SidebarSearcherComponent,
     CatalogoItemComponent,
-    CatalogoDirective
+    CatalogoDirective,
+    OnCreateDirective,
+    Catalogo2Directive,
+    Catalogo3Directive,
+    Catalogo4Directive,
+    Catalogo5Directive,
+    Catalogo6Directive,
+    CatalogoDetailComponent
   ],
   imports: [
     CommonModule,

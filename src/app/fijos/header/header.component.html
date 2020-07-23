@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-dark fixed-top">
+<nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-dark">
   <span class="navbar-brand mb-0 h1 text-light">ECOTAPIZ</span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +20,8 @@
       </div>
       <li class="nav-item mr-2" id="step8"><a id="len2" class="hoverable nav-link text-light"
           [routerLink]="['/simulador/app',{outlets:{'app': 'modelo'}}]" routerLinkActive="active">Simulador</a></li>
-      <li class="nav-item mr-2" id="step9"><a id="len3" class="hoverable nav-link text-light" routerLink="/catalogo"
-          routerLinkActive="active">Productos</a></li>
+      <li class="nav-item mr-2" id="step9"><a id="len3" class="hoverable nav-link text-light" 
+        [routerLink]="['/catalogo/child',{outlets:{'child': 'main'}}]" routerLinkActive="active">Productos</a></li>
       <li class="nav-item mr-2" id="step10"><a id="len4" class="hoverable nav-link text-light" routerLink="/blog"
         [routerLink]="['/blog/aux',{outlets:{'aux': 'main'}}]" routerLinkActive="active">Noticias</a></li>
       <li class="nav-item mr-2" id="step11"><a id="len4" class="hoverable nav-link text-light" routerLink="/admin"
