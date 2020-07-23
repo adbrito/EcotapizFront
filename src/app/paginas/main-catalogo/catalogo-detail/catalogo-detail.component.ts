@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemObject } from '../itemObject';
+import { DataTransferCatalogoService } from '../data-transfer-catalogo.service';
 
 @Component({
   selector: 'app-catalogo-detail',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogoDetailComponent implements OnInit {
 
-  constructor() { }
+  itemObject: ItemObject
+
+  constructor(private data: DataTransferCatalogoService) { }
 
   ngOnInit(): void {
+    this.data.currentObject.subscribe(objectSource => this.itemObject = objectSource);
   }
 
 }
