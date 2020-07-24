@@ -18,6 +18,7 @@ import { PostContainerComponent } from './paginas/home/post-container/post-conta
 import { ItemContainerComponent } from './paginas/home/item-container/item-container.component' ;  // <- importar
 
 
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ItemContainerComponent } from './paginas/home/item-container/item-conta
   imports: [ 
     BrowserModule,
     AppRoutingModule,
-    SimuladorModule
+    SimuladorModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

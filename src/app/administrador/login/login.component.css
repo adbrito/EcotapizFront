@@ -1,6 +1,7 @@
 :root {
     --input-padding-x: 1.5rem;
     --input-padding-y: 0.75rem;
+    
   }
   
   .login,
@@ -8,6 +9,10 @@
     min-height: 100vh;
   }
   
+.style-a{
+    color:#364f6b;
+}
+
   .bg-image {
     background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
     background-size: cover;
@@ -18,18 +23,25 @@
     font-weight: 300;
     
   }
-  
+ /* 
   @font-face {
     font-family: 'Arvo';
     font-display: block;
     src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-  }
+  }*/
+
   
   .styled-text {
     font-family: 'Arvo', sans-serif;
+    text-align: center;
+    color: #364f6b;
   }
 
 
+  .btn---color-364f6b{
+      background-color: #364f6b;
+      color: white;
+  }
   .btn-login {
     font-size: 0.9rem;
     letter-spacing: 0.05rem;
@@ -58,10 +70,10 @@
     margin-bottom: 0;
     /* Override default `<label>` margin */
     line-height: 1.5;
-    color: #495057;
+    color: #364f6b;
     cursor: text;
     /* Match the input under the label */
-    border: 1px solid transparent;
+    border: 1px solid #364f6b;
     border-radius: .25rem;
     transition: all .1s ease-in-out;
   }
