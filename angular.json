@@ -27,8 +27,7 @@
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/intro.js/introjs.css",
-              "src/custom-theme.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/custom-theme.scss"
             ],
             "scripts": [
               "node_modules/intro.js/intro.js"
