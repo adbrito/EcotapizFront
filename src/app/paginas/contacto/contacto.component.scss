@@ -58,3 +58,11 @@ label,input,p{
     font-family: $font-parrafos;
     color: $col-secundary;
 }
+
+#opt:hover{
+    background: $col-for;
+}
+
+.opt2:focus{
+    background: $col-for;
+}
