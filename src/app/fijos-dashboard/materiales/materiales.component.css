@@ -90,3 +90,7 @@
 		 background: var(--color-rojo);
 		 border: var(--color-rojo);
 	 }
+
+	 *{
+		font-family:'Roboto';
+	}

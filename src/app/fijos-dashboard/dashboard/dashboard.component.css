@@ -5,3 +5,7 @@
 .text-red{
     color: #ff0000;
 }
+
+*{
+    font-family:'Roboto';
+}

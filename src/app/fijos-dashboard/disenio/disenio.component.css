@@ -303,6 +303,10 @@ select option {
 	
 	 
 	 .btn-dark:hover{
-		 background: var(--color-rojo);
-		 border: var(--color-rojo);
+		 background: #ff0000;
+		 border: #ff0000;
 	 }
+
+	 *{
+		font-family:'Roboto';
+	}

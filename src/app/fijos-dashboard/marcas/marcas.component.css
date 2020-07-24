@@ -1,3 +1,4 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 
 :root{
@@ -326,3 +327,8 @@ float: right;
 	 background: var(--color-rojo);
 	 border: var(--color-rojo);
  }
+
+ *{
+    font-family:'Roboto';
+}
+ 
