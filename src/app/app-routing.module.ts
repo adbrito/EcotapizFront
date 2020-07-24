@@ -4,7 +4,7 @@ import { HomeComponent } from './paginas/home/home.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { SimuladorRoutingModule } from './paginas/simulador/simulador-routing.module';
 import { AppComponent } from './app.component';
-import { AcercaNosotrosComponent } from './paginas/acerca-nosotros/acerca-nosotros.component';
+import {  AcercaNosotrosComponent} from './paginas/acerca-nosotros/acerca-nosotros.component';
 
 
 
