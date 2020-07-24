@@ -19,6 +19,8 @@ import { ItemContainerComponent } from './paginas/home/item-container/item-conta
 
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { from } from 'rxjs';
+import { MainCatalogoModule } from './paginas/main-catalogo/main-catalogo.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     SimuladorModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MainCatalogoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

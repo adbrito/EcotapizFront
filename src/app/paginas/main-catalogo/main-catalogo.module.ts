@@ -33,6 +33,14 @@ import { CatalogoDetailComponent } from './catalogo-detail/catalogo-detail.compo
   imports: [
     CommonModule,
     MainCatalogoRoutingModule
+  ],
+  exports: [
+    CatalogoDirective,
+    Catalogo2Directive,
+    Catalogo3Directive,
+    Catalogo4Directive,
+    Catalogo5Directive,
+    Catalogo6Directive
   ]
 })
 export class MainCatalogoModule { }

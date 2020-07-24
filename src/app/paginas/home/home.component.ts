@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit,AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.loadNoticias(0);
     this.loadCatalogo(0);
   }
 
@@ -87,41 +86,6 @@ export class HomeComponent implements OnInit,AfterViewInit {
       hidePrev: true,
       hideNext: false
     }).start();
-  }
-
-  loadNoticias(contador: number){
-    var contenedor = this.elementRef.nativeElement.querySelector('#contenedor-noticias');
-    $("div").remove(".example");
-
-    let json: any = (data as any).default;
-    let i: number;
-
-    for(i=2; i>-1; i--){
-
-      let j:number = contador*3 + i;
-
-      let nombre = json[j].titulo
-      let autor = json[j].autor
-      let contenido = json[j].contenido
-      let fecha = json[j].fecha
-      let src = json[i].src
-
-      console.log(json[j].titulo);
-
-      let plantilla = `<div class="col-lg-4 mb-4 example">
-      <div class="card h-100">
-        <h4 class="card-header">${nombre}</h4>
-        <div class="card-body">
-          <p class="card-text">${contenido}</p>
-        </div>
-        <div class="card-footer">
-          <a href="#" class="btn btn-primary">Ir a post</a>
-        </div>
-      </div>
-    </div>`
-
-      contenedor.insertAdjacentHTML('afterbegin', plantilla);
-    }
   }
 
   loadCatalogo(contador: number){
