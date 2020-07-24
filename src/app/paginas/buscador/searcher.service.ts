@@ -21,10 +21,14 @@ export class SearcherService {
   }
 
   searchNoticias(searcher: string, view: ViewContainerRef){
+      let buscador = searcher.toLowerCase();
       for(let post of this.listPosts){
-        if (post['titulo'].includes(searcher)
-        || post['keywords'].includes(searcher)
-        || post['contenido'].includes(searcher)
+        let title:string = post['titulo'].toLowerCase()
+        let key:string = post['keywords'].toLowerCase()
+        let content:string = post['contenido'].toLowerCase()
+        if (title.includes(buscador)
+        || key.includes(buscador)
+        || content.includes(buscador)
         || searcher === ""){
             this.createPostComponent(post, view);
         }
@@ -32,10 +36,14 @@ export class SearcherService {
   }
 
   searchProductos(searcher: string, view: ViewContainerRef){
+    let buscador = searcher.toLowerCase();
     for(let products of this.listProducts){
-      if (products['titulo'].includes(searcher)
-      || products['keywords'].includes(searcher)
-      || products['contenido'].includes(searcher)
+      let title:string = products['titulo'].toLowerCase()
+      let key:string = products['keywords'].toLowerCase()
+      let content:string = products['contenido'].toLowerCase()
+      if (title.includes(buscador)
+      || key.includes(buscador)
+      || content.includes(buscador)
       || searcher === ""){
           this.createItemComponent(products,view)
       }
