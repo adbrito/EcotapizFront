@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit,AfterViewInit {
         },
         {
           element: '#step4',
-          intro: 'Aqui se encuentran videos subidos por la empresa',
+          intro: 'Aqui encuentras la informacion de lo que puedes hacer en el sitio web',
           position: 'right'
         },
         {
