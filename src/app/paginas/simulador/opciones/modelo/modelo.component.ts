@@ -5,7 +5,7 @@ import { SimuladorService } from 'src/app/paginas/simulador/servicios/simulador.
 @Component({
   selector: 'app-modelo',
   templateUrl: './modelo.component.html',
-  styleUrls: ['./modelo.component.css']
+  styleUrls: ['./modelo.component.scss']
 })
 export class ModeloComponent implements OnInit {
   autos = [];
@@ -28,7 +28,7 @@ export class ModeloComponent implements OnInit {
       this.autos = datos;
     });
     console.log(this.autos);
-
+   
 
   }
 
@@ -39,5 +39,9 @@ export class ModeloComponent implements OnInit {
     } else {
       SimuladorService.ordenarNombre(this.autos);
     }
+  }
+
+  ngAfterViewInit(){
+    
   }
 }

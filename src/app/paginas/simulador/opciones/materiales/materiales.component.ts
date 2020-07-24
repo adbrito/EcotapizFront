@@ -4,13 +4,12 @@ import{SimuladorService} from 'src/app/paginas/simulador/servicios/simulador.ser
 @Component({
   selector: 'app-materiales',
   templateUrl: './materiales.component.html',
-  styleUrls: ['./materiales.component.css']
+  styleUrls: ['./materiales.component.scss']
 })
 export class MaterialesComponent implements OnInit {
   materiales=[];
   tipos=[];
-  simuladorService;
-  constructor(simuladorService:SimuladorService) { 
+  constructor(public simuladorService: SimuladorService) { 
 
   }
 

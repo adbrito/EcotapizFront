@@ -1,3 +1,4 @@
+@import "src/styles.scss";
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section{
@@ -121,10 +122,27 @@ label {
 
 	padding: 2%;
 	flex: 1 16%;
-
+	
 	background-color: #FFF;
 	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
 }
+.product-card-select {
+	display: flex;
+	flex-direction: column;
+	border-style: solid;
+	border-color:  $col-five;
+	padding: 2%;
+	flex: 1 16%;
+	background-color: #FFF;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+.product-card:hover {
+
+	border-style: solid;
+	border-color:  $col-five;
+
+}
+
 
 
 .product-image img {
@@ -177,7 +195,7 @@ label {
 
 
 
-
+/*
 Styling de las option boxes
 */
 

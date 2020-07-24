@@ -18,7 +18,10 @@ export class SimuladorService {
 
   constructor( ) { 
   }
-
+  public  addDisenio(disenio){
+    this.simulacion.disenio=disenio;
+    //VistaPrevComponent.cambiarObjeto(auto.gltf);
+  }
 
   public  addAuto(auto){
     this.simulacion.auto=auto;

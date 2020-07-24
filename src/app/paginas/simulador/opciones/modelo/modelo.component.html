@@ -20,7 +20,7 @@
 </nav>
 
 <section class="products">
-	<div class="product-card" *ngFor="let auto of autos" (click)='this.simuladorService.addAuto(auto)'>
+	<div class="product-card" *ngFor="let auto of autos"  (click)='this.simuladorService.addAuto(auto)' [ngClass]="this.simuladorService.simulacion.auto==auto? 'product-card-select' : 'product-card'">
 		<div class="product-image">
 			<img src={{auto.img}}>
 		</div>

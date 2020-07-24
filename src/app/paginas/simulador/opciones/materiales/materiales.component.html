@@ -20,7 +20,7 @@
 </nav>
 
 <section class="products">
-	<div class="product-card" *ngFor="let material of materiales">
+	<div class="product-card" *ngFor="let material of materiales" (click)='this.simuladorService.addMaterial(material)' [ngClass]="this.simuladorService.simulacion.materiales.includes( material )? 'product-card-select' : 'product-card'">
 		<div class="product-image">
 			<img src={{material.img}}>
 		</div>

@@ -50,24 +50,13 @@ export class VistaPrevComponent implements OnInit {
     VistaPrevComponent.camera.position.z = -31;
     VistaPrevComponent.camera.position.y = 13, 5;
     VistaPrevComponent.camera.position.x = 27;
-
-
-
-
-    //レンダラーを作成
-
     VistaPrevComponent.renderer = new THREE.WebGLRenderer({ canvas: VistaPrevComponent.canvas, alpha: true });
     VistaPrevComponent.renderer.setClearColor(0x000000, 0);
     VistaPrevComponent.renderer.setViewport(VistaPrevComponent.canvas.clientWidth, VistaPrevComponent.canvas.clientHeight);
-    //背景色を設定
     VistaPrevComponent.renderer.gammaOutput = true;
-
     VistaPrevComponent.renderer.setSize(VistaPrevComponent.canvas.clientWidth, VistaPrevComponent.canvas.clientHeight);
-
     VistaPrevComponent.controls = new OrbitControls(VistaPrevComponent.camera, VistaPrevComponent.canvas); /*quitar VistaPrevComponent.canvas para habilitar el pato de la muerte*/
 
-
-    //光源を作成
    var light = new THREE.DirectionalLight( 0xffffff, 0.5);
     var ambient = new THREE.AmbientLight(0xffffff, 0.2);
     light.position.set(0, -70, 100).normalize();
@@ -75,18 +64,11 @@ export class VistaPrevComponent implements OnInit {
 
     VistaPrevComponent.scene.add(ambient);
 
-    //TEXTURAAA-----------------------------------
-    var material = new THREE.MeshPhongMaterial();
-    material.map    = THREE.ImageUtils.loadTexture('assets/3d/plata.png');
-   // -------------------------------------------
-
-    var texture = new THREE.Texture();
     var manager = new THREE.LoadingManager();
     manager.onProgress = function (item, loaded, total) { };
     var onProgress = function (xhr) { };
     var onError = function (xhr) { };
 
-    // 3Dモデル用テクスチャ画像の読込
     VistaPrevComponent.loader = new GLTFLoader();
 
     me.scene.dispose();

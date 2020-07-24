@@ -5,13 +5,13 @@ import { SimuladorService } from 'src/app/paginas/simulador/servicios/simulador.
 @Component({
   selector: 'app-disenio',
   templateUrl: './disenio.component.html',
-  styleUrls: ['./disenio.component.css']
+  styleUrls: ['./disenio.component.scss']
 })
 export class DisenioComponent implements OnInit {
   disenios = [];
   tipos = [];
-  simuladorService;
-  constructor(simuladorService: SimuladorService) {
+  
+  constructor(public simuladorService: SimuladorService) {
 
   }
 

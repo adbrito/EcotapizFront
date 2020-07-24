@@ -20,7 +20,8 @@
 </nav>
 
 <section class="products">
-	<div class="product-card" *ngFor="let disenio of disenios">
+	<div class="product-card" *ngFor="let disenio of disenios"  (click)='this.simuladorService.addDisenio(disenio)' [ngClass]="this.simuladorService.simulacion.disenio==disenio? 'product-card-select' : 'product-card'">
+
 		<div class="product-image">
 			<img src={{disenio.img}}>
 		</div>
