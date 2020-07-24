@@ -1,0 +1,9 @@
+{
+    "tipos": [
+        "Todos",
+        "Cuadros",
+        "Lineas",
+        "Circulos",
+        "Rombos"
+    ]
+}

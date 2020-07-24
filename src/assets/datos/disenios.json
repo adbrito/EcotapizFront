@@ -1,0 +1,130 @@
+{
+    "disenios": [
+        {
+            "nombre": "Autentico",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 3
+        },
+        {
+            "nombre": "Moderno",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 36
+        },
+        {
+            "nombre": "Especial",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 37
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 34
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 87
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 39
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 3
+        },
+        {
+            "nombre": "Moderno",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 36
+        },
+        {
+            "nombre": "Especial",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 37
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 34
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 87
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 39
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 3
+        },
+        {
+            "nombre": "Moderno",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 36
+        },
+        {
+            "nombre": "Especial",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 37
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "dos colores, largo, rombo",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 34
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 87
+        },
+        {
+            "nombre": "Autentico",
+            "descripcion": "",
+            "materiales":2,
+            "img": "./assets/ImagenesBorrar/Simulador_Disenio/DisenioDummy5.jpg",
+            "rankin": 39
+        }
+    ]
+}

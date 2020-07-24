@@ -30,8 +30,15 @@ const routes: Routes =
   
   { path: 'admin', loadChildren: () => import('./administrador/administrador.module').then(m => m.AdministradorModule) },
   { path: 'simulador', loadChildren: () => import('./paginas/simulador/simulador.module').then(m => m.SimuladorModule) },
+
   { path: 'dashboard', loadChildren: () => import('./fijos-dashboard/fijos-dashboard.module').then(m => m.FijosDashboardModule) },
-  {path: '**', component: HomeComponent}];
+  {path: '**', component: HomeComponent},
+
+  {
+    path: '',   redirectTo: 'home' , pathMatch: 'full',
+  }
+];
+
 
 
 
