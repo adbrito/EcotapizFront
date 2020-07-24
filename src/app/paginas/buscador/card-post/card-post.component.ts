@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-card-post',
   templateUrl: './card-post.component.html',
-  styleUrls: ['./card-post.component.css']
+  styleUrls: ['./card-post.component.scss']
 })
 export class CardPostComponent implements OnInit {
 

@@ -6,7 +6,7 @@ import { DataTransferCatalogoService } from '../data-transfer-catalogo.service';
 @Component({
   selector: 'app-catalogo-item',
   templateUrl: './catalogo-item.component.html',
-  styleUrls: ['./catalogo-item.component.css']
+  styleUrls: ['./catalogo-item.component.scss']
 })
 export class CatalogoItemComponent implements OnInit{
 

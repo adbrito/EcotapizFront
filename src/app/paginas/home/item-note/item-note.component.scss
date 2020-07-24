@@ -1,0 +1,15 @@
+@import "src/styles.scss";
+
+a{
+    font-family: $font-titulos;
+    color: $col-five;
+}
+
+p{
+    font-family: $font-parrafos;
+    color: $col-five;
+}
+
+.fondo{
+    background: $col-secundary;
+}

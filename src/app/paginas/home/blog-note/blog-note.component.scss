@@ -1,0 +1,35 @@
+@import "src/styles.scss";
+
+.btn{
+    background: $col-five;
+    border: solid $col-secundary;
+    border-width: 0.01rem;
+}
+
+.btn:hover{
+    background: $col-for;
+}
+
+.parrafo{
+    font-family: $font-parrafos;
+    color: $col-secundary;
+}
+
+.parrafo > a:hover{
+    color: $col-five;
+}
+
+p{
+    font-family: $font-parrafos;
+    color: $col-five;
+}
+
+h4{
+    font-family: $font-titulos;
+    color: $col-five;
+}
+
+.fondo{
+    background: $col-secundary;
+}
+

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-item-note',
   templateUrl: './item-note.component.html',
-  styleUrls: ['./item-note.component.css']
+  styleUrls: ['./item-note.component.scss']
 })
 export class ItemNoteComponent implements OnInit {
 

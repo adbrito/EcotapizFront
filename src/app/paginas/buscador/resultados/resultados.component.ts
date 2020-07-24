@@ -6,7 +6,7 @@ import { TextoService } from '../texto.service';
 @Component({
   selector: 'app-resultados',
   templateUrl: './resultados.component.html',
-  styleUrls: ['./resultados.component.css']
+  styleUrls: ['./resultados.component.scss']
 })
 export class ResultadosComponent implements OnInit {
 

@@ -1,7 +1,14 @@
+@import "src/styles.scss";
+
 .bgimg-gen{
     background-image: url('../../../../assets/images/home/background.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.parrafo-dark{
+    font-family: $font-parrafos;
+    color: $col-five;
 }
