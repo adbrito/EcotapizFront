@@ -18,6 +18,24 @@ q:before,q:after{
     content:’’;
     content:none;
 }
+img:hover {
+	transform:scale(1.2);
+	-ms-transform:scale(1.2); // IE 9 
+	-moz-transform:scale(1.2); // Firefox 
+	-webkit-transform:scale(1.2); // Safari and Chrome 
+	-o-transform:scale(1.2);
+}
+
+img{
+transform:scale(1);
+-ms-transform:scale(1); // IE 9 
+-moz-transform:scale(1); // Firefox 
+-webkit-transform:scale(1); // Safari and Chrome 
+-o-transform:scale(1); // Opera 
+transition: all 500ms ease-in-out; // IE 9
+
+}
+.product-image{overflow:hidden;}
 /* remember to define visible focus styles!
 :focus{
     outline:?????;
