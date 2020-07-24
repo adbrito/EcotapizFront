@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatStepper} from '@angular/material/stepper';
 
 @Component({
   selector: 'app-marcas',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class MarcasComponent implements OnInit {
   showModal= false;
   showMListado=false;
+  stepper: MatStepper;
   constructor() { }
 
   ngOnInit(): void {
@@ -18,4 +20,10 @@ export class MarcasComponent implements OnInit {
   showListado(){
     this.showMListado = true;
   }
+  goForward(){
+    this.stepper.next();
+}
+goBack(){
+  this.stepper.previous();
+}
 }

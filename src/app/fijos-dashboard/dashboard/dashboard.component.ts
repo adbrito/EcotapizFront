@@ -63,13 +63,13 @@ export class DashboardComponent implements OnInit {
     const dataSource = {
       chart: {
         //Set the chart caption
-        caption: "Countries With Most Oil Reserves [2017-18]",
+        caption: "Ventas durante el año 2018-2019",
         //Set the chart subcaption
-        subCaption: "In MMbbl = One Million barrels",
+        //subCaption: "In MMbbl = One Million barrels",
         //Set the x-axis name
-        xAxisName: "Country",
+        xAxisName: "Meses",
         //Set the y-axis name
-        yAxisName: "Reserves (MMbbl)",
+        yAxisName: "Ventas",
         numberSuffix: "K",
         //Set the theme for your chart
         theme: "fusion"

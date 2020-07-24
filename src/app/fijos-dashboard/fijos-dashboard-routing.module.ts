@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
 import {ReportePedidosComponent} from './reporte-pedidos/reporte-pedidos.component';
 import {ReporteClientesComponent} from './reporte-clientes/reporte-clientes.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 
 
@@ -38,7 +39,7 @@ const routes: Routes =
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes), MatStepperModule],
   exports: [RouterModule]
 })
 export class FijosDashboardRoutingModule { }
