@@ -1,9 +1,9 @@
 <div class="card h-100">
-    <h4 class="card-header"></h4>
+    <h4 class="card-header">{{postData.titulo}}</h4>
     <div class="card-body">
-      <p class="card-text"></p>
+      <p class="card-text">{{postData.contenido}}</p>
     </div>
     <div class="card-footer">
-      <a href="#" class="btn btn-primary"></a>
+      <a (click)="newObject()" class="btn btn-primary">Ir al post</a>
     </div>
   </div>

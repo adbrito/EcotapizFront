@@ -22,6 +22,10 @@ import {
   MatStepperModule
 } from '@angular/material/stepper';
 
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { from } from 'rxjs';
+import { MainCatalogoModule } from './paginas/main-catalogo/main-catalogo.module';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +45,9 @@ import {
     AppRoutingModule,
     SimuladorModule,
     MatStepperModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    MainCatalogoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
