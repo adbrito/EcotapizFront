@@ -1,0 +1,27 @@
+
+    <div class="card h-100">
+      <div>
+      <a (click)="newObject()" [routerLink]="['/catalogo/child',{outlets:{'child': 'detail'}}]"><img class="card-img-top" src={{postData.src}} alt=""></a>
+      <div class="ribbon sale ">
+        <div class="theribbon"><p class="texto">SALE</p></div>
+        <div class="ribbon-background"></div>
+      </div>
+      <!-- /.ribbon-->
+      <div class="ribbon new pt-1">
+        <div class="theribbon"><p class="texto">NEW</p></div>
+        <div class="ribbon-background"></div>
+      </div>
+      <!-- /.ribbon-->
+    </div>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a (click)="newObject()" [routerLink]="['/catalogo/child',{outlets:{'child': 'detail'}}]">{{postData.titulo}}</a>
+        </h4>
+        <h5>$ {{postData.precio}}</h5>
+        <p class="card-text">{{postData.contenido}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+      </div>
+    </div>
+

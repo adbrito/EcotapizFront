@@ -77,6 +77,56 @@
   background-color: lightslategray;
 }
 
+.searchbar{
+  border: 1;
+  border-color: white;
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 40px;
+  background-color: dark;
+  border-radius: 30px;
+  padding: 10px;
+  }
+
+  .search_input{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  width: 0;
+  line-height: 20px;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover{
+    background: darkgray;
+    border: white;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 200px;
+  background: transparent;
+  caret-color:red;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_icon{
+    color: black;
+  }
+
+  .search_icon{
+  height: 20px;
+  width: 20px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  text-decoration:none;
+  }
+
+
 
   
  

@@ -1,61 +1,77 @@
-import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
-import * as data from '../recursos/productos.json'
+import { Component, OnInit, ElementRef, AfterViewInit, ComponentFactoryResolver, ViewChild, ViewChildren, QueryList, ViewContainerRef, AfterContentInit, AfterViewChecked } from '@angular/core';
+import * as data from '../../../../assets/recursos-datos/productos.json'
 import { Router } from '@angular/router';
+import { CatalogoDirective } from '../catalogo.directive';
+import { CatalogoItemComponent } from '../catalogo-item/catalogo-item.component';
+import { ItemObject } from '../itemObject';
+import { DataTransferCatalogoService } from '../data-transfer-catalogo.service';
+import { DynamicComponentService } from '../dynamic-component.service';
+import { Catalogo2Directive } from '../catalogo2.directive';
+import { Catalogo3Directive } from '../catalogo3.directive';
+import { Catalogo4Directive } from '../catalogo4.directive';
+import { Catalogo5Directive } from '../catalogo5.directive';
+import { Catalogo6Directive } from '../catalogo6.directive';
 
 @Component({
   selector: 'app-catalogo',
   templateUrl: './catalogo.component.html',
   styleUrls: ['./catalogo.component.css']
 })
-export class CatalogoComponent implements OnInit, AfterViewInit {
+export class CatalogoComponent implements OnInit, AfterViewInit{
 
-  constructor(private elementRef: ElementRef) { }
+  items = [0, 0, 0, 0, 0, 0]
+  contador = 0
+  json: any 
+
+  @ViewChildren (CatalogoDirective) catalogos: QueryList<CatalogoDirective>;
+
+  @ViewChild (CatalogoDirective, {static: true}) appCatalogo: CatalogoDirective;
+  @ViewChild (Catalogo2Directive, {static: true}) appCatalogo2: Catalogo2Directive;
+  @ViewChild (Catalogo3Directive, {static: true}) appCatalogo3: Catalogo3Directive;
+  @ViewChild (Catalogo4Directive, {static: true}) appCatalogo4: Catalogo4Directive;
+  @ViewChild (Catalogo5Directive, {static: true}) appCatalogo5: Catalogo5Directive;
+  @ViewChild (Catalogo6Directive, {static: true}) appCatalogo6: Catalogo6Directive;
+
+  lista:ViewContainerRef[] = []
+
+  itemObject: ItemObject
+  constructor(private elementRef: ElementRef, private componentFactoryResolver: ComponentFactoryResolver,
+              private data: DataTransferCatalogoService, private service: DynamicComponentService) { 
+               
+  }
 
   ngOnInit(): void {
+    this.lista = [this.appCatalogo.viewContainerRef, this.appCatalogo2.viewContainerRef, this.appCatalogo3.viewContainerRef,
+      this.appCatalogo4.viewContainerRef, this.appCatalogo5.viewContainerRef, this.appCatalogo6.viewContainerRef]
+    this.lista.forEach(selector => selector.clear())
+    this.contador = 0
+    this.loadCatalogo()
+    this.data.currentObject.subscribe(objectSource => this.itemObject = objectSource);
   }
 
   ngAfterViewInit(): void {
-    this.loadCatalogo(0);
+    //this.loadCatalogo()
   }
 
-  loadCatalogo(contador: number){
-    var contenedor = this.elementRef.nativeElement.querySelector('#contenedor-catalogo');
-    $("div").remove(".example");
+  loadCatalogo(){
+    let i:number ;
+    
+    for(i=0; i<6; i++){
 
-    let json: any = (data as any).default;
-    console.log(json)
-    let i: number;
-
-    for(i=5; i>-1; i--){
-
-      let j:number = contador*6 + i;
-
-      let titulo = json[j].titulo
-      let link = json[j].link
-      let contenido = json[j].contenido
-      let precio = json[j].precio
-      let src = json[i].src
-
-      console.log(json[j].titulo);
-
-      let plantilla = `<div class="col-lg-4 col-md-6 mb-4 example">
-      <div class="card h-100">
-        <a routerLink=${link}><img class="card-img-top" src=${src} alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a routerLink=${link}>${titulo}</a>
-          </h4>
-          <h5>${precio}</h5>
-          <p class="card-text">${contenido}</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-        </div>
-      </div>
-    </div>`
-
-      contenedor.insertAdjacentHTML('afterbegin', plantilla);
+      let j:number = this.contador*6 + i;
+      this.items[i] = j
     }
+    
+    this.lista.forEach(selector => this.loadComponent2(selector))
+  }
+
+  loadComponent2(catalogo: ViewContainerRef){
+    this.json = (data as any).default;
+    let object = this.json[this.contador]
+    const viewContainerRef = catalogo;
+    let componente = this.service.insertComponent(CatalogoItemComponent, viewContainerRef );
+    (<CatalogoItemComponent> componente).defineAttributes(object);
+    this.contador++;
   }
 
 }

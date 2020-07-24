@@ -1,7 +1,11 @@
-import { Component, OnInit, Renderer2, ViewChild, ElementRef, Inject, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ViewChild, ElementRef, Inject, AfterViewInit, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import * as data from '../recursos/posts.json';
+import * as data from '../../../../assets/recursos-datos/posts.json';
 import { Container } from '@angular/compiler/src/i18n/i18n_ast';
+import { DataTransferService } from '../data-transfer.service';
+import { PostObject } from '../postObject';
+import { BlogDirectiveDirective } from '../blog-directive.directive';
+import { BlogCardComponent } from '../blog-card/blog-card.component';
 
 @Component({
   selector: 'app-blog',
@@ -11,51 +15,45 @@ import { Container } from '@angular/compiler/src/i18n/i18n_ast';
 export class BlogComponent implements OnInit,AfterViewInit {
 
   contador: number = 0;
+  id: number = 0;
+  postObject: PostObject;
+  contenedor: any
+  @ViewChild(BlogDirectiveDirective, {static: true}) appBlogDirective: BlogDirectiveDirective;
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2, @Inject(DOCUMENT) private document) { 
-    
+  constructor(private elementRef: ElementRef, private componentFactoryResolver: ComponentFactoryResolver,
+              private data: DataTransferService) { 
   }
   ngAfterViewInit(): void {
-    this.loadPost(this.contador);
   }
 
   ngOnInit(): void {
-    
+    this.loadPost(this.contador)
+    this.data.currentObject.subscribe(objectSource => this.postObject = objectSource);
   }
 
   loadPost(contador: number){
-    var contenedor = this.elementRef.nativeElement.querySelector('#d-post');
-    $("div").remove(".example");
+    const viewContainerRef = this.appBlogDirective.viewContainerRef;
+    viewContainerRef.clear();
 
     let json: any = (data as any).default;
     let i: number;
 
-    for(i=2; i>-1; i--){
+    for(i=0; i<3; i++){
 
       let j:number = contador*3 + i;
 
-      let nombre = json[j].titulo
-      let autor = json[j].autor
-      let contenido = json[j].contenido
-      let fecha = json[j].fecha
-      let src = json[i].src
-
-      console.log(json[j].titulo);
-
-      let plantilla = `<div class="card mb-4 example" >
-      <img class="card-img-top" src=${src} alt="Card image cap">
-      <div class="card-body">
-        <h2 class="card-title">${nombre}</h2>
-        <p class="card-text">${contenido}</p>
-        <a href="#" class="btn btn-primary">Read More &rarr;</a>
-      </div>
-      <div class="card-footer text-muted">
-        Posted on ${fecha} by ${autor}
-        <a href="#">Start Bootstrap</a>
-      </div>
-      </div>`
-
-      contenedor.insertAdjacentHTML('afterbegin', plantilla);
+      this.loadComponent(json[j]);
     }
+  }
+
+  
+
+  loadComponent(json: object){
+    const viewContainerRef = this.appBlogDirective.viewContainerRef;
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(BlogCardComponent);
+    const componentRef = viewContainerRef.createComponent(componentFactory);
+    (<BlogCardComponent>componentRef.instance).defineAttributes(json)
+    //let button = componentRef.location.nativeElement.querySelector('b-boton')
+    //button.addEventListener('click', button.onClick.bind(this.newObject(json)));
   }
 }

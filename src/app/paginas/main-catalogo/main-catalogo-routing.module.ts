@@ -3,11 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { MainCatalogoComponent } from './main-catalogo.component';
+import { CatalogoItemComponent } from './catalogo-item/catalogo-item.component';
+import { CatalogoDetailComponent } from './catalogo-detail/catalogo-detail.component';
 
 
 const routes: Routes = [
-  { path: '', component: MainCatalogoComponent, children:[
-    { path: '', component: CatalogoComponent, outlet: 'child',pathMatch: 'full'}
+{ path: 'child', component: MainCatalogoComponent, 
+    children:[
+    {path: 'main', component: CatalogoComponent, outlet: "child"},
+    {path: 'item', component: CatalogoItemComponent, outlet: "child"},
+    {path: 'detail', component: CatalogoDetailComponent, outlet: "child"}
   ]
 },
 ];

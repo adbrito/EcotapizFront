@@ -1,0 +1,12 @@
+<div class="card mb-4 example" >
+    <img class="card-img-top" src={{postData.src}} alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">{{postData.titulo}}</h2>
+      <p class="card-text">{{postData.contenido}}</p>
+      <button (click)="newObject()" class="btn btn-primary">
+        Read More &rarr;</button>
+    </div>
+    <div class="card-footer text-muted">
+      Posted on {{postData.fecha}} by {{postData.autor}}
+    </div>
+</div>
