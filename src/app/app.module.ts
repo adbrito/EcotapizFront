@@ -16,9 +16,12 @@ import { BlogNoteComponent } from './paginas/home/blog-note/blog-note.component'
 import { ItemNoteComponent } from './paginas/home/item-note/item-note.component';
 import { PostContainerComponent } from './paginas/home/post-container/post-container.component';
 import { ItemContainerComponent } from './paginas/home/item-container/item-container.component' ;  // <- importar
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations' ;  // <- importar
 
+import { 
+  MatStepperModule
+} from '@angular/material/stepper';
 
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     SimuladorModule,
-    NoopAnimationsModule
+    MatStepperModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

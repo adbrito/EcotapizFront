@@ -22,6 +22,9 @@ import { BlogComponent } from './blog/blog.component';
 import { SimuladorComponent } from './simulador/simulador.component';
 import { MaterialesComponent } from './materiales/materiales.component';
 import { MarcasComponent } from './marcas/marcas.component';
+import { 
+  MatStepperModule
+} from '@angular/material/stepper';
 
 
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
@@ -34,6 +37,6 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
   imports: [
     CommonModule,
     FijosDashboardRoutingModule,
-    FusionChartsModule]
+    FusionChartsModule,MatStepperModule]
 })
 export class FijosDashboardModule { }

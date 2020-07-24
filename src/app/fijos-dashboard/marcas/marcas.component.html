@@ -27,47 +27,112 @@
 	</div>
 </div>
 <div *ngIf="showModal">
+
 	<div id="myModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-body">
 					<form name="form-marca-auto" class="form-marca-auto">
 						<p class="titulo">Marca del auto</p>
-						<div class="group-element">
-							<label for="nombre" class="lbl-caracter">Nombre:</label>
-							<input type="text" name="nombre" class="estilo-input-form">
-						</div>
-						<div>
-							<label for="descripcion" class="lbl-caracter">Descripción:</label>
-							<input type="text" name="descripcion" class="estilo-input-form">
-						</div>
-						<div>
-							<label for="marca" class="lbl-caracter">Marca:</label>
-							<input type="text" name="marca" class="estilo-input-form">
-						</div>
-						<div>
-							<label for="modelo" class="lbl-caracter">Modelo:</label>
-							<input type="text" name="modelo" class="estilo-input-form">
-						</div>
-						<div>
-							<label for="anio" class="lbl-caracter">Año:</label>
-							<input type="text" name="anio" class="estilo-input-form"></div>
-						<div>
-							<label for="loadimg" class="lbl-caracter">Subir imagen:</label>
-							<input type="file" name="loadimg" class="estilo-file-form"></div>
-						<div>
-							<label for="load3d" class="lbl-caracter">Subir archivo 3D:</label>
-							<input type="file" name="load3d" class="estilo-file-form"></div>
-						
-						<div class="contenedor-btn">
-							<input type="submit" id="guardar" name="guardar" value="Guardar" class="btn btn-dark"/>
-						</div>
+
+						<mat-vertical-stepper >
+
+							<mat-step label="Paso 1">
+
+								<div class="group-element">
+
+									<label for="nombre" class="lbl-caracter">Nombre:</label>
+									<input type="text" name="nombre" class="estilo-input-form">
+								</div>
+								<div>
+
+									<button mat-button matStepperNext (click)="goForward()">Siguiente</button>
+								</div>
+							</mat-step>
+							<mat-step label="Paso 2">
+
+								<div>
+									<label for="descripcion" class="lbl-caracter">Descripción:</label>
+									<input type="text" name="descripcion" class="estilo-input-form">
+								</div>
+								<div>
+									<button mat-button matStepperPrevious (click)="goBack()">Atrás</button>
+									<button mat-button matStepperNext (click)="goForward()">Siguiente</button>
+								</div>
+							</mat-step>
+							<mat-step label="Paso 3">
+
+								<div>
+									<label for="marca" class="lbl-caracter">Marca:</label>
+									<input type="text" name="marca" class="estilo-input-form">
+								</div>
+								<div>
+									<button mat-button matStepperPrevious (click)="goBack()">Atrás</button>
+									<button mat-button matStepperNext (click)="goForward()">Siguiente</button>
+								</div>
+							</mat-step>
+							<mat-step label="Paso 4">
+
+								<div>
+									<label for="modelo" class="lbl-caracter">Modelo:</label>
+									<input type="text" name="modelo" class="estilo-input-form">
+								</div>
+								<div>
+									<button mat-button matStepperPrevious (click)="goBack()">Atrás</button>
+									<button mat-button matStepperNext (click)="goForward()">Siguiente</button>
+								</div>
+							</mat-step>
+							<mat-step label="Paso 5">
+
+								<div>
+									<label for="anio" class="lbl-caracter">Año:</label>
+									<input type="text" name="anio" class="estilo-input-form">
+								</div>
+								<div>
+									<button mat-button matStepperPrevious (click)="goBack()">Atrás</button>
+									<button mat-button matStepperNext (click)="goForward()">Siguiente</button>
+								</div>
+							</mat-step>
+							<mat-step label="Paso 6">
+
+								<div>
+									<label for="loadimg" class="lbl-caracter">Subir imagen:</label>
+									<input type="file" name="loadimg" class="estilo-file-form">
+								</div>
+								<div>
+									<button mat-button matStepperPrevious (click)="goBack()">Atrás</button>
+									<button mat-button matStepperNext (click)="goForward()">Siguiente</button>
+								</div>
+							</mat-step>
+							<mat-step label="Paso 7">
+
+								<div>
+									<label for="load3d" class="lbl-caracter">Subir archivo 3D:</label>
+									<input type="file" name="load3d" class="estilo-file-form">
+								</div>
+								<div>
+									<button mat-button matStepperPrevious (click)="goBack()">Atrás</button>
+									<button mat-button matStepperNext (click)="goForward()">Siguiente</button>
+								</div>
+							</mat-step>
+							<mat-step label="Paso 8">
+								<div>
+									<button mat-button matStepperPrevious (click)="goBack()">Atrás</button>
+								</div>
+								<div class="contenedor-btn">
+									<input type="submit" id="guardar" name="guardar" value="Guardar"
+										class="btn btn-dark" />
+								</div>
+							</mat-step>
+						</mat-vertical-stepper>
+
 					</form>
 				</div>
 
 			</div>
 		</div>
 	</div>
+
 </div>
 <!-- <div>
     <label>Nombre:</label>
@@ -100,10 +165,10 @@
 	  </div> -->
 
 
-
-
-
 <div *ngIf="showMListado">
+
+
+
 	<div id="myModal-verlistado" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -251,4 +316,5 @@
 			</div>
 		</div>
 	</div>
+
 </div>
