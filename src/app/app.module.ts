@@ -11,6 +11,7 @@ import { AcercaNosotrosComponent } from './paginas/acerca-nosotros/acerca-nosotr
 
 import  {  SimuladorModule  }      from  './paginas/simulador/simulador.module' ;  // <- importar
 
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import  {  SimuladorModule  }      from  './paginas/simulador/simulador.module' 
   imports: [ 
     BrowserModule,
     AppRoutingModule,
-    SimuladorModule
+    SimuladorModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

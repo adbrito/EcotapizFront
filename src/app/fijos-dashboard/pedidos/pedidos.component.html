@@ -1,0 +1,102 @@
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Pedidos</h1>
+<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information
+    about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables
+        documentation</a>.</p>
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Recopilación de pedidos recibidos</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 alinear">
+                    <div class="dataTables_length" id="dataTable_length">
+                        <label>Mostrar entradas
+                            <select name="dataTable_length"
+                                aria-controls="dataTable"
+                                class="custom-select custom-select-sm form-control form-control-sm">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select> 
+                            
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 alinear">
+                    <div id="dataTable_filter" class="dataTables_filter"><label>Buscar:<input type="search"
+                                class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Diseño</th>
+                        <th>Detalle</th>
+                        <th>Cotización</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Código</th>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Diseño</th>
+                        <th>Detalle</th>
+                        <th>Cotización</th>
+                        <th>Estado</th>
+
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>2334</td>
+                        <td>30/Abril/2020</td>
+                        <td>Fernando Armendariz</td>
+                        <td>farmen93@hotmail.com</td>
+                        <td>fernando_armendariz_2332.jpg</td>
+                        <td>fernando_armendariz_2332.txt</td>
+                        <td>$250,30</td>
+                        <td><input type="checkbox">
+                        <input type="submit" text="Enviar"></td>
+                    </tr>
+                    <tr>
+                        <td>2458</td>
+                        <td>03/Mayo/2020</td>
+                        <td>Alejandro Vergara</td>
+                        <td>alejo_342@gmail.com</td>
+                        <td>alejandro_vergara_2458.jpg</td>
+                        <td>alejandro_vergara_2458.txt</td>
+                        <td>$180,80</td>
+                    </tr>
+                    <tr>
+                        <td>2489</td>
+                        <td>15/Mayo/2020</td>
+                        <td>Francisco Medina</td>
+                        <td>panchito_medina@hotmail.com</td>
+                        <td>francisco_medina_2489.jpg</td>
+                        <td>francisco_medina_2489.txt</td>
+                        <td>$136,20</td>
+                    </tr>
+               
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
