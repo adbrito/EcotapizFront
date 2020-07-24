@@ -11,22 +11,22 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active bgimg1">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Trabajamos con todo tipo de material</h3>
-            <p>Cuero, Polyester, de todo</p>
+            <h3 class="titulo">Trabajamos con todo tipo de material</h3>
+            <p class="parrafo">Cuero, Polyester, de todo</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item bgimg2">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Cualquier Clase de asiento</h3>
-            <p>Personalizamos asientos delanteros y de atrás</p>
+            <h3 class="titulo">Cualquier Clase de asiento</h3>
+            <p class="parrafo">Personalizamos asientos delanteros y de atrás</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item bgimg3">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Alta Calidad</h3>
-            <p>Usamos materiales de ultima generación</p>
+            <h3 class="titulo">Alta Calidad</h3>
+            <p class="parrafo">Usamos materiales de ultima generación</p>
           </div>
         </div>
       </div>
@@ -40,22 +40,26 @@
       </a>
     </div>
     <div id="step1">
-    <h1 class="my-4 text-light" >Bienvenidos a Ecotapiz</h1>
-    <hr class="border-light">
-    <div class="text-light text-center">
-      <h2>¡Hola! Somos ECOTAPIZ</h2>
-      <h3>Elegancia y confort</h3>
-      <p>La mejor Tienda de tapicería se encuentra aquí mismo.</p> 
-      <p>Contamos con una gran selección de productos para todas tus necesidades. </p> 
-      <p>Te invitamos a visitarnos para tener una experiencia de compra muy agradable y eficiente. 
-        Nuestro personal te ayudará personalmente para que encuentres justo lo que estás buscando. Si necesitas ayuda, ideas o servicios especiales, estamos a tu disposición. No dudes en llamarnos si tienes preguntas, con gusto te ayudaremos.</p>
+    <h1 class="my-4 titulo" >Bienvenidos a Ecotapiz</h1>
+    <hr>
+    <div class="text-center">
+      <div class="titulo">
+        <h2>¡Hola! Somos ECOTAPIZ</h2>
+        <h3>Elegancia y confort</h3>
     </div>
-    <button class="btn btn-primary" id="#vertical" (click)="startSteps()">Realizar paseo guiado</button>
+      <div class="parrafo">
+        <p>La mejor Tienda de tapicería se encuentra aquí mismo.</p> 
+        <p>Contamos con una gran selección de productos para todas tus necesidades. </p> 
+        <p>Te invitamos a visitarnos para tener una experiencia de compra muy agradable y eficiente. 
+        Nuestro personal te ayudará personalmente para que encuentres justo lo que estás buscando. Si necesitas ayuda, ideas o servicios especiales, estamos a tu disposición. No dudes en llamarnos si tienes preguntas, con gusto te ayudaremos.</p>
+      </div>
+      </div>
+    <button class="btn" id="#vertical" (click)="startSteps()">Realizar paseo guiado</button>
   </div>
     <!-- Marketing Icons Section -->
     <div id="step2">
-      <h2 class="my-4 text-light">Noticias Destacadas</h2>
-      <hr class="border-light">
+      <h2 class="my-4 titulo">Noticias Destacadas</h2>
+      <hr>
       <div>
         <app-post-container></app-post-container>
       </div>
@@ -64,8 +68,8 @@
 
     <!-- Portfolio Section -->
     <div id="step3">
-      <h2 class="my-4 text-light">Productos mas vendidos</h2>
-      <hr class="border-light">
+      <h2 class="my-4 titulo">Productos mas vendidos</h2>
+      <hr>
       <div>
           <app-item-container></app-item-container>
       </div>
@@ -73,18 +77,18 @@
     <!-- /.row -->
 
     <!-- Features Section -->
-    <div class="row bg-dark rounded">
+    <div class="row fondo rounded">
 
       <div class="col-lg-6 pt-3" id="step4">
-        <h2 class="text-light">¿Qué puedes hacer en este sitio web?</h2>
-        <p class="text-light">En esta pagina, tu vas a poder hacer: </p>
+        <h2 class="titulo">¿Qué puedes hacer en este sitio web?</h2>
+        <p class="parrafo">En esta pagina, tu vas a poder hacer: </p>
         <ul>
-          <li class="text-light">Ver Noticias sobre nuestra compañía</li>
-          <li class="text-light">Ver los productos que ofrecemos</li>
-          <li class="text-light">Modelar su tapizado personalizao</li>
-          <li class="text-light">Contactarse con nosotros por medio de un mensaje</li>
+          <li class="parrafo">Ver Noticias sobre nuestra compañía</li>
+          <li class="parrafo">Ver los productos que ofrecemos</li>
+          <li class="parrafo">Modelar su tapizado personalizao</li>
+          <li class="parrafo">Contactarse con nosotros por medio de un mensaje</li>
         </ul>
-        <p class="text-light">Somos Ecotapiz, una compañia dedicada al tapizado personalizado de asientos de vehiculos, radicados en la ciudad de Guayaquil, Ecuador.</p>
+        <p class="parrafo">Somos Ecotapiz, una compañia dedicada al tapizado personalizado de asientos de vehiculos, radicados en la ciudad de Guayaquil, Ecuador.</p>
       </div>
       <div class="col-lg-6 pt-3">
         <iframe class="frame"  src="https://www.youtube.com/embed/voHVAPl8Mbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -92,11 +96,11 @@
       </div>
 
       <div class="col-md-8 pt-4 text-right">
-        <p class="text-light">Para ver nuestra informacion de contacto o enviar un mensaje, presione en Ir a contacto
+        <p class="parrafo">Para ver nuestra informacion de contacto o enviar un mensaje, presione en Ir a contacto
         </p>
       </div>
       <div class="col-md-4 pt-3 pb-3"  id="step5">
-        <a class="btn btn-lg btn-secondary btn-block text-light" routerLink="/contacto">Ir a Contacto</a>
+        <a class="btn btn-lg btn-block parrafo" routerLink="/contacto">Ir a Contacto</a>
       </div>
 
     </div>

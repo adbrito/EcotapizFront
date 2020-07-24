@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-blog-note',
   templateUrl: './blog-note.component.html',
-  styleUrls: ['./blog-note.component.css']
+  styleUrls: ['./blog-note.component.scss']
 })
 export class BlogNoteComponent implements OnInit {
 

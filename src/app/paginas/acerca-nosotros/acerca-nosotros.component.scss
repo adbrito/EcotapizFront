@@ -1,0 +1,57 @@
+@import "src/styles.scss";
+
+.bgimg-gen{
+    background-image: url('../../../assets/images/home/background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $col-third;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $col-for;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: $col-for;
+    text-decoration: none;
+    color: $col-five;
+  }
+
+  .fondo{
+    background: $col-secundary;
+  }
+
+  h1,h2{
+    font-family: $font-titulos;
+    color: $col-secundary;
+  }
+
+  p{
+    font-family: $font-parrafos;
+    color: $col-secundary;
+  }
+
+  h5{
+    font-family: $font-titulos;
+    color: $col-five;
+  }
+
+  small{
+    font-family: $font-parrafos;
+    color: $col-five;
+  }
+
+  .color{
+    color: $col-primary;
+  }

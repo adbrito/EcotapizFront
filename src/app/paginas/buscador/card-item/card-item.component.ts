@@ -7,7 +7,7 @@ import { CatalogoItemComponent } from '../../main-catalogo/catalogo-item/catalog
 @Component({
   selector: 'app-card-item',
   templateUrl: './card-item.component.html',
-  styleUrls: ['./card-item.component.css']
+  styleUrls: ['./card-item.component.scss']
 })
 export class CardItemComponent implements OnInit {
 

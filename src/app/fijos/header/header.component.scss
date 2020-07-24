@@ -1,3 +1,5 @@
+@import "src/styles.scss";
+
 .hoverable{
     display:inline-block;
     backface-visibility: hidden;
@@ -74,16 +76,16 @@
 }
 
 .dropdown-menu > li:hover, .dropdown-menu > li:focus {
-  background-color: lightslategray;
+  background-color: $col-for;
 }
 
 .searchbar{
   border: 1;
-  border-color: white;
+  border-color: $col-secundary;
   margin-bottom: auto;
   margin-top: auto;
   height: 40px;
-  background-color: dark;
+  background-color: $col-five;
   border-radius: 30px;
   padding: 10px;
   }
@@ -98,20 +100,19 @@
   }
 
   .searchbar:hover{
-    background: darkgray;
-    border: white;
+    background: $col-for;
   }
 
   .searchbar:hover > .search_input{
   padding: 0 10px;
   width: 200px;
   background: transparent;
-  caret-color:red;
+  caret-color: $col-secundary;
   transition: width 0.4s linear;
   }
 
   .searchbar:hover > .search_icon{
-    color: black;
+    color: $col-five;
   }
 
   .search_icon{
@@ -122,9 +123,29 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color:white;
+  color: $col-secundary;
   text-decoration:none;
   }
+
+  .fondo{
+    background: $col-five;
+  }
+
+  a{
+    font-family: $font-parrafos;
+    color: $col-secundary;
+  }
+
+  .parrafo{
+    font-family: $font-parrafos;
+    color: $col-secundary !important;
+  }
+
+  .parrafo-dark{
+    font-family: $font-parrafos;
+    color: $col-five;
+  }
+
 
 
 

@@ -15,7 +15,7 @@
     </div>
       <div class="card-body">
         <h4 class="card-title">
-          <a (click)="newObject()" [routerLink]="['/catalogo/child',{outlets:{'child': 'detail'}}]">{{postData.titulo}}</a>
+          <a class="titulo-dark" (click)="newObject()" [routerLink]="['/catalogo/child',{outlets:{'child': 'detail'}}]">{{postData.titulo}}</a>
         </h4>
         <h5>$ {{postData.precio}}</h5>
         <p class="card-text">{{postData.contenido}}</p>

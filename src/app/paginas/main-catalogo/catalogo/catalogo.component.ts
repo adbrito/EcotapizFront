@@ -15,7 +15,7 @@ import { Catalogo6Directive } from '../catalogo6.directive';
 @Component({
   selector: 'app-catalogo',
   templateUrl: './catalogo.component.html',
-  styleUrls: ['./catalogo.component.css']
+  styleUrls: ['./catalogo.component.scss']
 })
 export class CatalogoComponent implements OnInit, AfterViewInit{
 

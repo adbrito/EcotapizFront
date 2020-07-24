@@ -1,3 +1,5 @@
+@import "src/styles.scss";
+
 body {
     padding-top: 56px;
   }
@@ -46,6 +48,47 @@ body {
 .frame{
     width: 100%; 
     height: 100%;
+}
+
+.titulo{
+    font-family: $font-titulos;
+    color: $col-secundary;
+}
+
+.titulo-dark{
+    font-family: $font-titulos;
+    color: $col-five;
+}
+
+.parrafo{
+    font-family: $font-parrafos;
+    color: $col-secundary;
+}
+
+.parrafo-dark{
+    font-family: $font-parrafos;
+    color: $col-five;
+}
+
+.fondo{
+    background: $col-five;
+}
+
+.btn{
+    background: $col-five;
+    border: solid $col-secundary;
+    border-width: 0.01rem;
+    font-family: $font-parrafos;
+    color: $col-secundary;
+}
+
+.btn:hover{
+    background: $col-for;
+}
+
+
+hr{
+    border-top: solid $col-secundary;
 }
 
 

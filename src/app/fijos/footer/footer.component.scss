@@ -1,26 +1,28 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import "src/styles.scss";
+
 section {
     padding: 25px 0;
 }
 
 section .section-title {
     text-align: center;
-    color: #343a40;
+    color: $col-five;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
 #footer {
-    background: #343a40 !important;
+    background: $col-five !important;
 }
 #footer h5{
 	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+    border-left: 3px solid $col-secundary;
     padding-bottom: 6px;
     margin-bottom: 10px;
-    color:#ffffff;
+    color: $col-secundary;
 }
 #footer a {
-    color: #ffffff;
+    color: $col-secundary;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -41,10 +43,10 @@ section .section-title {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-	color:#ffffff;
+	color: $col-secundary;
 }
 #footer ul.social li a:hover{
-	color:#eeeeee;
+	color: $col-secundary;
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
@@ -70,5 +72,9 @@ section .section-title {
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
+    }
 }
+.h6{
+    font-family: $font-titulos;
+    color: $col-secundary;
 }

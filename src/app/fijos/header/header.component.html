@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-expand-lg navbar-light bg-dark">
+<nav class="navbar navbar-inverse navbar-expand-lg navbar-light fondo">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,22 +7,22 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul id="barra" class="nav navbar-nav mr-auto">
       <div class="dropdown">
-        <li class="nav-item mr-2 hoverable nav-link text-light dropdown-toggle" data-toggle="dropdown" id="step6">
+        <li class="nav-item mr-2 hoverable nav-link dropdown-toggle parrafo" data-toggle="dropdown" id="step6">
           Principal</li>
-        <ul class="dropdown-menu bg-dark">
-          <li class="nav-item mr-2"><a id="len1" class="hoverable nav-link text-light" routerLink="/home"
+        <ul class="dropdown-menu fondo">
+          <li class="nav-item mr-2"><a id="len1" class="hoverable nav-link parrafo" routerLink="/home"
               routerLinkActive="active">Home</a></li>
-          <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link text-light" routerLink="/about"
+          <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link parrafo" routerLink="/about"
               routerLinkActive="active">Sobre Nosotros</a></li>
-          <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link text-light" routerLink="/contacto"
+          <li class="nav-item mr-2"><a id="len4" class="hoverable nav-link parrafo" routerLink="/contacto"
               routerLinkActive="active">Contacto</a></li>
         </ul>
       </div>
-      <li class="nav-item mr-2" id="step7"><a id="len2" class="hoverable nav-link text-light"
+      <li class="nav-item mr-2" id="step7"><a id="len2" class="hoverable nav-link parrafo"
           [routerLink]="['/simulador/app',{outlets:{'app': 'modelo'}}]" routerLinkActive="active">Simulador</a></li>
-      <li class="nav-item mr-2" id="step8"><a id="len3" class="hoverable nav-link text-light" 
+      <li class="nav-item mr-2" id="step8"><a id="len3" class="hoverable nav-link parrafo" 
         [routerLink]="['/catalogo/child',{outlets:{'child': 'main'}}]" routerLinkActive="active">Productos</a></li>
-      <li class="nav-item mr-2" id="step9"><a id="len4" class="hoverable nav-link text-light" routerLink="/blog"
+      <li class="nav-item mr-2" id="step9"><a id="len4" class="hoverable nav-link parrafo" routerLink="/blog"
         [routerLink]="['/blog/aux',{outlets:{'aux': 'main'}}]" routerLinkActive="active">Noticias</a></li>
     </ul>
   </div>
@@ -36,7 +36,7 @@
         </div>
       </li>
 
-      <li class="nav-item mr-2" id="step11"><a id="len4" class="hoverable nav-link text-light" routerLink="/admin"
+      <li class="nav-item mr-2" id="step11"><a id="len4" class="hoverable nav-link parrafo" routerLink="/admin"
           routerLinkActive="active">Login</a></li>
     </ul>
   </div>

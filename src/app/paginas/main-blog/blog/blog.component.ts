@@ -10,7 +10,7 @@ import { BlogCardComponent } from '../blog-card/blog-card.component';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit,AfterViewInit {
 
