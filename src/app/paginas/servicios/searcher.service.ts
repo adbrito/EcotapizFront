@@ -1,5 +1,4 @@
 import { Injectable, ViewContainerRef } from '@angular/core';
-import { DynamicComponentService } from '../servicios/dynamic-component.service';
 import * as posts from '../../../assets/recursos-datos/posts.json'
 import * as products from '../../../assets/recursos-datos/productos.json'
 import { CardPostComponent } from '../buscador/card-post/card-post.component';

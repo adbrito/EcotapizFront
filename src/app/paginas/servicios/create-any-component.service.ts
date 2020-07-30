@@ -7,6 +7,7 @@ import { GenComponent } from './GenComponent';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CreateAnyComponentService {
   listPosts = (posts as any).default;
   listProducts = (products as any).default;
