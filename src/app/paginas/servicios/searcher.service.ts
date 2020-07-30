@@ -4,6 +4,7 @@ import * as posts from '../../../assets/recursos-datos/posts.json'
 import * as products from '../../../assets/recursos-datos/productos.json'
 import { CardPostComponent } from '../buscador/card-post/card-post.component';
 import { CardItemComponent } from '../buscador/card-item/card-item.component';
+import { CreateAnyComponentService } from './create-any-component.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class SearcherService {
   listPosts = (posts as any).default;
   listProducts = (products as any).default; 
 
-  constructor(private loadService: DynamicComponentService) {}
+  constructor(private loadService: CreateAnyComponentService) {}
 
   buscarTodo(searcher:string,view: ViewContainerRef){
       this.searchNoticias(searcher,view)
@@ -30,7 +31,7 @@ export class SearcherService {
         || key.includes(buscador)
         || content.includes(buscador)
         || searcher === ""){
-            this.createPostComponent(post, view);
+            this.loadService.createComponentOneView(CardPostComponent, view, post);
         }
       }
   }
@@ -45,20 +46,10 @@ export class SearcherService {
       || key.includes(buscador)
       || content.includes(buscador)
       || searcher === ""){
-          this.createItemComponent(products,view)
+        this.loadService.createComponentOneView(CardItemComponent, view, products);
       }
     }
   }
-
-  createPostComponent(objeto: object, view:ViewContainerRef){
-      let post = this.loadService.insertComponent(CardPostComponent,view);
-      (<CardPostComponent> post).defineAttributes(objeto)
-  }
-
-  createItemComponent(objeto: object, view:ViewContainerRef){
-    let item = this.loadService.insertComponent(CardItemComponent,view);
-    (<CardItemComponent> item).defineAttributes(objeto)
-}
 
 
 }

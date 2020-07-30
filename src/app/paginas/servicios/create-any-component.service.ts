@@ -37,4 +37,9 @@ export class CreateAnyComponentService {
       }
   }
 
+  createComponentOneView(component: any, view: ViewContainerRef, data: object){
+    let createdComponent = this.loadService.insertComponent(component, view);
+    (<GenComponent> createdComponent).defineAttributes(data);
+  }
+
 }
