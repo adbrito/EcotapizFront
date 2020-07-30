@@ -1,16 +1,12 @@
-export class ItemObject{
-    public titulo: string = "";
-    public keywords: string = "";
-    public contenido: string = "";
+import { GenObject } from './GenObject';
+
+export class ItemObject extends GenObject{
     public precio: string = "";
     public calificacion: string = "";
-    public src: string = "";
     public link: string = "";
 
     constructor(){
-        this.titulo = "Prueba"
-        this.keywords = ""
-        this.contenido = ""
+        super();
         this.precio = ""
         this.calificacion = ""
         this.src = ""

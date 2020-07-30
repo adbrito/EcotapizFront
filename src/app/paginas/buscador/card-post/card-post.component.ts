@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PostObject } from '../../main-blog/postObject';
-import { DataTransferService } from '../../main-blog/data-transfer.service';
+import { PostObject } from '../../servicios/postObject';
+import { DataTransferService } from '../../servicios/data-transfer.service';
 import { Router } from '@angular/router';
 
 @Component({

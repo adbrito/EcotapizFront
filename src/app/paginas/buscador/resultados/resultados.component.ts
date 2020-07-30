@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SearcherSelectorDirective } from '../searcher-selector.directive';
-import { SearcherService } from '../searcher.service';
-import { TextoService } from '../texto.service';
+import { SearcherService } from '../../servicios/searcher.service';
+import { TextoService } from '../../servicios/texto.service';
 
 @Component({
   selector: 'app-resultados',

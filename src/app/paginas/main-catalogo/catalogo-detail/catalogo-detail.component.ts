@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemObject } from '../itemObject';
-import { DataTransferCatalogoService } from '../data-transfer-catalogo.service';
+import { ItemObject } from '../../servicios/itemObject';
+import { DataTransferCatalogoService } from '../../servicios/data-transfer-catalogo.service';
 
 @Component({
   selector: 'app-catalogo-detail',

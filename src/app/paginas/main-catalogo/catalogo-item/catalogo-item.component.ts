@@ -1,33 +1,33 @@
-import { Component, OnInit, ChangeDetectorRef, AfterViewChecked, AfterViewInit, AfterContentChecked } from '@angular/core';
-import { ItemObject } from '../itemObject';
+import { Component, OnInit} from '@angular/core';
+import { ItemObject } from '../../servicios/itemObject';
 import { Router } from '@angular/router';
-import { DataTransferCatalogoService } from '../data-transfer-catalogo.service';
+import { DataTransferCatalogoService } from '../../servicios/data-transfer-catalogo.service';
+import { GenComponent } from '../../servicios/GenComponent';
 
 @Component({
   selector: 'app-catalogo-item',
   templateUrl: './catalogo-item.component.html',
   styleUrls: ['./catalogo-item.component.scss']
 })
-export class CatalogoItemComponent implements OnInit{
+export class CatalogoItemComponent extends GenComponent implements OnInit{
 
-  postObject: ItemObject;
   postData: ItemObject;
 
-  constructor(private data: DataTransferCatalogoService, private router: Router, private cdRef:ChangeDetectorRef) { 
-    this.postData = new ItemObject
+  constructor(private data: DataTransferCatalogoService, private router: Router) { 
+    super()
+    this.GenPost = new ItemObject
+    this.GenData = new ItemObject
+    this.postData = (<ItemObject> this.GenData)
+    this.link = ['/catalogo/child',{outlets:{'child': 'detail'}}]
   }
 
   ngOnInit(): void {
-    this.data.currentObject.subscribe(objectSource => this.postObject = objectSource);
-  }
-
-  defineAttributes(itemObject: object){
-    (<ItemObject>this.postData).defineAttributes(itemObject);  
+    this.data.currentObject.subscribe(objectSource => (<ItemObject> this.GenPost) = objectSource);
   }
 
   newObject(){
-    this.data.changeObject(this.postData);
-    this.router.navigate(['/catalogo/child',{outlets:{'child': 'detail'}}]);
+    this.data.changeObject((<ItemObject> this.GenData));
+    this.router.navigate(this.link);
   }
 
 }

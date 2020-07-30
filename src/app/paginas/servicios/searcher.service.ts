@@ -1,9 +1,9 @@
 import { Injectable, ViewContainerRef } from '@angular/core';
-import { DynamicComponentService } from '../main-catalogo/dynamic-component.service';
+import { DynamicComponentService } from '../servicios/dynamic-component.service';
 import * as posts from '../../../assets/recursos-datos/posts.json'
 import * as products from '../../../assets/recursos-datos/productos.json'
-import { CardPostComponent } from './card-post/card-post.component';
-import { CardItemComponent } from './card-item/card-item.component';
+import { CardPostComponent } from '../buscador/card-post/card-post.component';
+import { CardItemComponent } from '../buscador/card-item/card-item.component';
 
 @Injectable({
   providedIn: 'root'

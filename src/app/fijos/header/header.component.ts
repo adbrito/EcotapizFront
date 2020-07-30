@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TextoService } from 'src/app/paginas/buscador/texto.service';
+import { TextoService } from 'src/app/paginas/servicios/texto.service';
 import { Router } from '@angular/router';
 
 

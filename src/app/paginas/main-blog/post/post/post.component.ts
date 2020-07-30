@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DataTransferService } from '../../data-transfer.service';
+import { DataTransferService } from '../../../servicios/data-transfer.service';
 import * as data from '../../../../../assets/recursos-datos/posts.json';
-import { PostObject } from '../../postObject';
+import { PostObject } from '../../../servicios/postObject';
 
 @Component({
   selector: 'app-post',

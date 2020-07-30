@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemObject } from '../../main-catalogo/itemObject';
-import { DataTransferCatalogoService } from '../../main-catalogo/data-transfer-catalogo.service';
+import { ItemObject } from '../../servicios/itemObject';
+import { DataTransferCatalogoService } from '../../servicios/data-transfer-catalogo.service';
 import { Router } from '@angular/router';
 import { CatalogoItemComponent } from '../../main-catalogo/catalogo-item/catalogo-item.component';
 

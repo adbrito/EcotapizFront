@@ -1,14 +1,15 @@
-export class PostObject{
-    public titulo: string;
+import { GenObject } from './GenObject';
+
+export class PostObject extends GenObject{
     public autor: string;
-    public keywords: string;
-    public contenido: string;
     public content: string;
     public fecha: string;
-    public src: string;
 
     constructor(){
-        this.titulo = "Prueba"
+        super();
+        this.autor = ""
+        this.content = ""
+        this.fecha = ""
     }
 
     defineAttributes(postObject: object){
