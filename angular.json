@@ -30,6 +30,8 @@
               "src/custom-theme.scss"
             ],
             "scripts": [
+              "node_modules/d3/dist/d3.js",
+
               "node_modules/intro.js/intro.js"
             ]
           },
