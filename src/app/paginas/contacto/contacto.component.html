@@ -1,13 +1,11 @@
 <div class="bgimg-gen">
   <div class="container">
-
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
       <h1 class="mt-4 mb-3 text-light">Contacto
         <small></small>
       </h1>
     </div>
-
     <!-- Content Row -->
     <div class="row">
       <!-- Map Column -->
@@ -44,7 +42,6 @@
       </div>
     </div>
     <!-- /.row -->
-
     <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row text-light">
@@ -53,8 +50,8 @@
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Nombre:</label>
-              <input type="text" class="form-control fondo parrafo" id="name" required data-validation-required-message="Please enter your name.">
+              <label for="name">Nombre:</label>
+              <input type="text" class="form-control fondo parrafo" id="name" name="name" [(ngModel)]="contacto.name" >
               <p class="help-block"></p>
             </div>
           </div>
@@ -70,42 +67,40 @@
               <!--<input type="button" class="form-control bg-dark text-light dropdown-toggle" id="place dropdownMenuButton" required data-validation-required-message="Please enter your email address." data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
               <div class="dropdown d-inline">
                 <button class=" btn form-control opt-2 dropdown-toggle" type="button" id="dropdownMenuButton place" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccione su lugar de origen
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-                    <li class="dropdown-item" id="opt">Guayaquil</li>
-                    <li class="dropdown-item" id="opt">Quito</li>
-                    <li class="dropdown-item" id="opt">Cuenca</li>
-                    <li class="dropdown-item" id="opt">Ambato</li>
-                    <li class="dropdown-item" id="opt">Machala</li>
-                    <li class="dropdown-item" id="opt">Portoviejo</li>
-                    <li class="dropdown-item" id="opt">Santa Elena</li>
-                    <li class="dropdown-item" id="opt">Latacunga</li>
-                    <li class="dropdown-item" id="opt">Morona Santiago</li>
-                  </ul>
-                </div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
+                  <li class="dropdown-item" id="opt">Guayaquil</li>
+                  <li class="dropdown-item" id="opt">Quito</li>
+                  <li class="dropdown-item" id="opt">Cuenca</li>
+                  <li class="dropdown-item" id="opt">Ambato</li>
+                  <li class="dropdown-item" id="opt">Machala</li>
+                  <li class="dropdown-item" id="opt">Portoviejo</li>
+                  <li class="dropdown-item" id="opt">Santa Elena</li>
+                  <li class="dropdown-item" id="opt">Latacunga</li>
+                  <li class="dropdown-item" id="opt">Morona Santiago</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Correo Electronico:</label>
-              <input type="email" class="form-control fondo parrafo" id="email" required data-validation-required-message="Please enter your email address.">
+              <label for="Email">Correo Electronico:</label>
+              <input type="email" class="form-control fondo parrafo" id="email" name="Email" [(ngModel)]="contacto.email" required data-validation-required-message="Please enter your email address.">
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Mensaje:</label>
-              <textarea rows="10" cols="100" class="form-control fondo parrafo" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              <label for="mensaje">Mensaje:</label>
+              <textarea rows="10" cols="100" class="form-control fondo parrafo" id="message" name="mensaje" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" [(ngModel)]="contacto.mensaje"></textarea>
             </div>
           </div>
           <div id="success"></div>
           <!-- For success/fail messages -->
-          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton" (click)="addContacto()">Send Message</button>
         </form>
       </div>
-
     </div>
     <!-- /.row -->
-
   </div>
   <!-- /.container -->
 </div>

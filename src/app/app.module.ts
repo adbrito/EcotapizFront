@@ -26,6 +26,13 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { from } from 'rxjs';
 import { MainCatalogoModule } from './paginas/main-catalogo/main-catalogo.module';
 
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
+import {ContactService} from '../app/paginas/servicios/contact.service';
+
+
 
 @NgModule({
   declarations: [
@@ -47,9 +54,12 @@ import { MainCatalogoModule } from './paginas/main-catalogo/main-catalogo.module
     MatStepperModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MainCatalogoModule
-  ],
-  providers: [],
+    MainCatalogoModule,
+    HttpClientModule,
+    FormsModule,
+    CommonModule
+      ],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
