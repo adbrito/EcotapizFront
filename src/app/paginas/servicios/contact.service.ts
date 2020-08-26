@@ -29,8 +29,7 @@ addContacto(contacto:Contact): Observable<any> {
 // 'Access-Control-Allow-Origin': '*'
   }  
     const body=JSON.stringify(contacto);
-    //console.log("este es lo q envio",contacto.email, headers);
-    console.log(body);
+    //console.log("imprimiendo el body",body);
      return this.http.post('subscribe/', body,{'headers':headers})
     //return this.http.post('subscribe/', contacto.email,{'headers':headers})
   }

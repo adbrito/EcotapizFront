@@ -12,6 +12,9 @@ import { Router } from '@angular/router';
 })
 export class ContactoComponent implements OnInit {
 contacto= new Contact();
+  
+
+
   constructor(
 private contactService: ContactService
 
@@ -23,7 +26,7 @@ ngOnInit() {
 addContacto() {
     this.contactService.addContacto(this.contacto)
       .subscribe(data => {
-        console.log(data)
+        console.log("imprimiendo data",data, this.contacto)
       })      
   }
 
@@ -53,4 +56,7 @@ model = new Contact();
       error => this.error = error
     );
   }*/
+
+    
+
 }

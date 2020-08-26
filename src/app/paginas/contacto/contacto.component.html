@@ -57,31 +57,38 @@
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Fecha de Nacimiento:</label>
-              <input type="date" class="form-control fondo parrafo" id="date" required data-validation-required-message="Please enter your phone number.">
+              <label for="date">Fecha de Nacimiento:</label>
+              <input type="date" class="form-control fondo parrafo" id="date" name="date" [(ngModel)]="contacto.fecha" >
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
-              <label>Seleccione su lugar de Nacimiento:</label>
-              <!--<input type="button" class="form-control bg-dark text-light dropdown-toggle" id="place dropdownMenuButton" required data-validation-required-message="Please enter your email address." data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-              <div class="dropdown d-inline">
-                <button class=" btn form-control opt-2 dropdown-toggle" type="button" id="dropdownMenuButton place" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccione su lugar de origen
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-                  <li class="dropdown-item" id="opt">Guayaquil</li>
-                  <li class="dropdown-item" id="opt">Quito</li>
-                  <li class="dropdown-item" id="opt">Cuenca</li>
-                  <li class="dropdown-item" id="opt">Ambato</li>
-                  <li class="dropdown-item" id="opt">Machala</li>
-                  <li class="dropdown-item" id="opt">Portoviejo</li>
-                  <li class="dropdown-item" id="opt">Santa Elena</li>
-                  <li class="dropdown-item" id="opt">Latacunga</li>
-                  <li class="dropdown-item" id="opt">Morona Santiago</li>
-                </ul>
-              </div>
+              <label for="lugar">Lugar de nacimiento:</label>
+              <input type="text" class="form-control fondo parrafo" id="lugar" name="lugar" [(ngModel)]="contacto.ciudad" >
+              <p class="help-block"></p>
             </div>
           </div>
+         <!--  <div class="control-group form-group">
+            <div class="controls">
+              <label>Seleccione su lugar de Nacimiento:</label> -->
+              <!--<input type="button" class="form-control bg-dark text-light dropdown-toggle" id="place dropdownMenuButton" required data-validation-required-message="Please enter your email address." data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+              <!-- <div class="dropdown d-inline"> -->
+                <!-- <button class=" btn form-control opt-2 dropdown-toggle" type="button" id="dropdownMenuButton place" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccione su lugar de origen
+                </button> -->
+                <!-- <select class="form-control fondo parrafo" [(ngModel)]="opcion" (change)="capturar()"> -->
+                  <!-- <option class="form-control fondo parrafo"  id="gye" value="gye">Guayaquil</option>
+                  <option class="form-control fondo parrafo" id="uio" value="uio">Quito</option>
+                  <option class="form-control fondo parrafo" id="cuen" value="cuen">Cuenca</option>
+                  <option class="form-control fondo parrafo" id="amb" value="amb">Ambato</option>
+                  <option class="form-control fondo parrafo" id="mac" value="mach">Machala</option>
+                  <option class="form-control fondo parrafo" id="pvo" value="pvo">Portoviejo</option>
+                  <option class="form-control fondo parrafo" id="staelena" value="staelena">Santa Elena</option>
+                  <option class="form-control fondo parrafo" id="latacunga" value="latacunga">Latacunga</option>
+                  <option class="form-control fondo parrafo" id="morstgo" value="morstgo">Morona Santiago</option> -->
+                <!-- </select> -->
+            <!--   </div>
+            </div>
+          </div> -->
           <div class="control-group form-group">
             <div class="controls">
               <label for="Email">Correo Electronico:</label>
