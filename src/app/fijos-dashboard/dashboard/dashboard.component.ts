@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   dataSource: Object;
-
-  constructor() {  //STEP 2 - Chart Data
-    const chartData = [
+private chartData = [
       {
         label: "Enero",
         value: "90"
@@ -59,6 +57,12 @@ export class DashboardComponent implements OnInit {
         value: "210"
       }
     ];
+  constructor() {  //STEP 2 - Chart Data
+    this.graficoBarras();
+  }
+
+  private graficoBarras(){
+
     // STEP 3 - Chart Configuration
     const dataSource = {
       chart: {
@@ -75,7 +79,7 @@ export class DashboardComponent implements OnInit {
         theme: "fusion"
       },
       // Chart Data - from step 2
-      data: chartData
+      data: this.chartData
     };
     this.dataSource = dataSource;
   }
