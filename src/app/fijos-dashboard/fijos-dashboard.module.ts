@@ -26,6 +26,7 @@ import {
   MatStepperModule
 } from '@angular/material/stepper';
 import { PieComponent } from './pie/pie.component';
+import { PlanoComponent } from './plano/plano.component';
 
 
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
@@ -34,7 +35,8 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
 
 @NgModule({
   declarations: [FijosDashboardComponent, FooterComponent, NavbarComponent, 
-    SidebarComponent, DashboardComponent, PedidosComponent, DisenioComponent, ClientesComponent, ReporteClientesComponent, ReportePedidosComponent, BlogComponent, SimuladorComponent, MaterialesComponent, MarcasComponent, PieComponent],
+    SidebarComponent, DashboardComponent, PedidosComponent,
+     DisenioComponent, ClientesComponent, ReporteClientesComponent, ReportePedidosComponent, BlogComponent, SimuladorComponent, MaterialesComponent, MarcasComponent, PieComponent, PlanoComponent],
   imports: [
     CommonModule,
     FijosDashboardRoutingModule,
