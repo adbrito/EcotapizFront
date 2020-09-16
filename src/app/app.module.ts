@@ -1,6 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import * as $ from 'jquery';
+import { AngularFireModule } from '@angular/fire';
+import {
+  AngularFireStorageModule,
+  AngularFireStorageReference,
+  AngularFireUploadTask,
+} from "@angular/fire/storage";
+import { environment } from 'src/environments/environment';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './fijos/header/header.component';
@@ -27,6 +36,7 @@ import { from } from 'rxjs';
 import { MainCatalogoModule } from './paginas/main-catalogo/main-catalogo.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,12 +52,15 @@ import { MainCatalogoModule } from './paginas/main-catalogo/main-catalogo.module
   ],
   imports: [ 
     BrowserModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
     SimuladorModule,
     MatStepperModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MainCatalogoModule
+    MainCatalogoModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
