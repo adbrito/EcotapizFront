@@ -29,12 +29,9 @@
     "@types/three": "^0.103.2",
     "angular-fusioncharts": "^3.0.4",
     "bootstrap": "^4.5.0",
-<<<<<<< HEAD
     "firebase": "^7.20.0",
-=======
     "d3": "^5.16.0",
     "d3.js": "0.0.2-security",
->>>>>>> 7476b16519a8e4b0457e37bbf4b5a882fcdd6a11
     "fusioncharts": "^3.15.2",
     "intro.js": "^2.9.3",
     "materialize-css": "^1.0.0-rc.2",
