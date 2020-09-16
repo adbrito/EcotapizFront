@@ -11,7 +11,7 @@ export class MiscellanousHttpRequestService {
 
   async getAuthorName(autorid: number){
     let authorName = ""
-    let y = await this.http.get(HTTPService.url2 + "usuario/" + autorid, HTTPService.httpOptionsMisc)
+    let y = await this.http.get(HTTPService.url2 + "user/" + autorid, HTTPService.httpOptionsMisc)
             .then((value)=>{
                   if(value["autor"] != undefined)
                     authorName = value["autor"]
