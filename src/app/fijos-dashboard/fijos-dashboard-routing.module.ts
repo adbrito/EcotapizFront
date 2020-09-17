@@ -7,7 +7,8 @@ import { PedidosComponent } from './pedidos/pedidos.component';
 import {ReportePedidosComponent} from './reporte-pedidos/reporte-pedidos.component';
 import {ReporteClientesComponent} from './reporte-clientes/reporte-clientes.component';
 import {MatStepperModule} from '@angular/material/stepper';
-
+import {ReporteProductoComponent} from './reporte-producto/reporte-producto.component';
+import {ReporteNoticiaComponent} from './reporte-noticia/reporte-noticia.component';
 
 
 
@@ -33,6 +34,12 @@ const routes: Routes =
   },
   {
     path: 'reporte-clientes', component: ReporteClientesComponent, outlet: "aux"
+  },
+  {
+    path: 'reporte-noticia', component: ReporteNoticiaComponent, outlet: "aux"
+  },
+  {
+    path: 'reporte-producto', component: ReporteProductoComponent, outlet: "aux"
   }
 ]
 }
