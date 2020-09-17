@@ -65,4 +65,23 @@ export class ProductsHttpRequestService {
       })
       return productsTemp;
     }
+
+    async getProductsListBySearcher(searcher:string){
+      //console.log(HTTPService.url);
+      let items = await this.make_request3(searcher)
+      if(items.length > 0){
+        this.modify_array(items)
+        await this.misc.delay(1300)
+      }
+      return items;
+    }
+  
+    async make_request3(searcher:string){
+      let productsTemp:Array<Object> = new Array<Object>();
+      let append:string = "?q={\"$or\":[{\"titulo\":{\"$regex\":\"" + searcher + "\"}},{\"keywords\":{\"$regex\":\"" + searcher + "\"}},{\"contenido\":{\"$regex\":\"" + searcher + "\"}}]}"
+      let x = await this.http.get(HTTPService.url + "real-products" + append , HTTPService.httpOptionsRest).then((res:any) =>{
+        productsTemp = res as Array<Object>
+      })
+      return productsTemp;
+    }
 }

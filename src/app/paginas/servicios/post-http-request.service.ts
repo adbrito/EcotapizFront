@@ -68,6 +68,25 @@ export class PostHttpRequestService {
     })
     return productsTemp;
   }
+
+  async getPostsListBySearcher(searcher:string){
+    //console.log(HTTPService.url);
+    let items = await this.make_request3(searcher)
+    if(items.length > 0){
+      this.modify_array(items)
+      await this.misc.delay(1100)
+    }
+    return items;
+  }
+
+  async make_request3(searcher:string){
+    let productsTemp:Array<Object> = new Array<Object>();
+    let append:string = "?q={\"$or\":[{\"titulo\":{\"$regex\":\"" + searcher + "\"}},{\"keywords\":{\"$regex\":\"" + searcher + "\"}},{\"contenido\":{\"$regex\":\"" + searcher + "\"}}]}"
+    let x = await this.http.get(HTTPService.url + "real-posts" + append , HTTPService.httpOptionsRest).then((res:any) =>{
+      productsTemp = res as Array<Object>
+    })
+    return productsTemp;
+  }
   
 
 
