@@ -12,6 +12,18 @@ export class ProductsHttpRequestService {
     public misc: MiscellanousHttpRequestService,
     public image: ImageStorageService) { }
 
+
+    async getProductsById(materialID: number){
+      let items:Array<Object> = new Array<Object>();
+      if(materialID > 0){
+          items = await this.getProductsListBySearch(materialID)
+      } else if (materialID == -1){
+          items = await this.getProductsList()
+      }
+      return items
+
+    }
+
     async getProductsList(){
       //console.log(HTTPService.url);
       let items = await this.make_request()

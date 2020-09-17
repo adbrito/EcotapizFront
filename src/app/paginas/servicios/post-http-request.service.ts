@@ -15,6 +15,17 @@ export class PostHttpRequestService {
               public misc: MiscellanousHttpRequestService,
               public image: ImageStorageService) {}
 
+
+  async getPostssById(autorID: number){
+    let items:Array<Object> = new Array<Object>();
+    if(autorID > 0){
+      items = await this.getPostsListBySearch(autorID)
+    } else if (autorID == -1){
+      items = await this.getPostsList()
+    }
+    return items        
+  }
+      
   async getPostsList(){
     //console.log(HTTPService.url);
     let posts = await this.make_request()
@@ -39,6 +50,24 @@ export class PostHttpRequestService {
     })
   }
 
+  async getPostsListBySearch(autorID: number){
+    //console.log(HTTPService.url);
+    let items = await this.make_request2(autorID)
+    if(items.length > 0){
+      this.modify_array(items)
+      await this.misc.delay(1100)
+    }
+    return items;
+  }
+
+  async make_request2(autorID: number){
+    let productsTemp:Array<Object> = new Array<Object>();
+    let append:string = "?q={\"autor\":" + autorID +"}"
+    let x = await this.http.get(HTTPService.url + "real-posts" + append , HTTPService.httpOptionsRest).then((res:any) =>{
+      productsTemp = res as Array<Object>
+    })
+    return productsTemp;
+  }
   
 
 

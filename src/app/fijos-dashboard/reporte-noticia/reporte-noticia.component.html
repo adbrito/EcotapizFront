@@ -6,19 +6,7 @@
     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
 
 
-        <nav class="product-filter">
-
-            <div class="sort">
-                <div class="dataTables_length" id="dataTable_length">
-                    <label>Filtrar por:
-                        <select name="dataTable_length" aria-controls="dataTable"
-                            class="custom-select custom-select-sm form-control form-control-sm">
-                            <option value="todos">Todos</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-        </nav>
+        
 
 
     </form>
@@ -47,11 +35,21 @@
                         </label>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 alinear">
-                    <div id="dataTable_filter" class="dataTables_filter"><label>Buscar:<input type="search"
-                                class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label>
+                <nav class="product-filter">
+
+                    <div class="sort">
+                        <div class="dataTables_length" id="dataTable_length">
+                            <label>Filtrar por Usuario:
+                                <select [(ngModel)]="selected" placeholder="select" name="dataTable_length" aria-controls="dataTable"
+                                    class="custom-select custom-select-sm form-control form-control-sm"
+                                    (ngModelChange)="onOptionsSelected()">
+                                    <option [ngValue]="-1" id="todos">Todos</option>
+                                    <option *ngFor="let usuario of listUsuario" [ngValue]="usuario.id" id="todos">{{usuario.nombre}} {{usuario.apellido}}</option>
+                                </select>
+                            </label>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
 
 
@@ -79,25 +77,12 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    <tr>
-                        <td>Cuero</td>
-                        <td>Marlon Lindao</td>
-                        <td>Aqui se habla sobre el cuero lalalalalalala</td>
-                        <td>03/Mayo/2020</td>
+                    <tr *ngFor="let item of items">
+                        <td>{{item.titulo}}</td>
+                        <td>{{item.autor}}</td>
+                        <td>{{item.contenido}}</td>
+                        <td>{{item.fecha | date:'mediumDate'}}</td>
                     </tr>
-                    <tr>
-                    	<td>Cuero</td>
-                        <td>Marlon Lindao</td>
-                        <td>Aqui se habla sobre el cuero lalalalalalala</td>
-                        <td>03/Mayo/2020</td>
-                    </tr>
-                    <tr>
-                       <td>Cuero</td>
-                        <td>Marlon Lindao</td>
-                        <td>Aqui se habla sobre el cuero lalalalalalala</td>
-                        <td>03/Mayo/2020</td>
-                    </tr>
-
                 </tbody>
             </table>
         </div>

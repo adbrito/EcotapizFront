@@ -29,6 +29,7 @@ import { PieComponent } from './pie/pie.component';
 import { PlanoComponent } from './plano/plano.component';
 import { ReporteProductoComponent } from './reporte-producto/reporte-producto.component';
 import { ReporteNoticiaComponent } from './reporte-noticia/reporte-noticia.component';
+import { FormsModule } from '@angular/forms';
 
 
 FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
@@ -41,6 +42,7 @@ FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
      DisenioComponent, ClientesComponent, ReporteClientesComponent, ReportePedidosComponent, BlogComponent, SimuladorComponent, MaterialesComponent, MarcasComponent, PieComponent, PlanoComponent, ReporteProductoComponent, ReporteNoticiaComponent],
   imports: [
     CommonModule,
+    FormsModule,
     FijosDashboardRoutingModule,
     FusionChartsModule,MatStepperModule]
 })

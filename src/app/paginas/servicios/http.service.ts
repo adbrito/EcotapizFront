@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class HTTPService {
 
   static url = 'https://ecotapiz-5ece.restdb.io/rest/';
-  static url2 = 'http://192.168.100.2:8000/';
+  static url2 = 'http://127.0.0.1:8000/';
 
   static httpOptionsRest = {
     headers: new HttpHeaders({ 
