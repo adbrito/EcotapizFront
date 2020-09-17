@@ -8,7 +8,7 @@
               <article class="filter-group">
                   <header class="card-header"> 
                     <a href="#" data-toggle="collapse" data-target="#collapse_aside1" data-abc="true" aria-expanded="false" class="collapsed"> 
-                          <h6 class="title">Categorías <i class="icon-control fa fa-chevron-down"></i> </h6> 
+                          <h6 class="title">Materiales <i class="icon-control fa fa-chevron-down"></i> </h6> 
                     </a> 
                   </header>
                   <div class="filter-content collapse" id="collapse_aside1">
@@ -16,41 +16,11 @@
                         <div class="list-group">
                               <a [routerLink]="['/catalogo/child',{outlets:{'child': 'main'}}]" 
                                 class="list-group-item parrafo-dark">Ver todos los productos</a>
-                              <a [routerLink]="['/catalogo/child',{outlets:{'child': 'main'}}]" 
-                                class="list-group-item parrafo-dark">Asientos Prediseñados</a>
-                              <a [routerLink]="['/catalogo/child',{outlets:{'child': 'main'}}]" 
-                                class="list-group-item parrafo-dark">Tapizados Personalizados</a>
+                              <a *ngFor="let material of listMateriales" 
+                              [routerLink]="['/catalogo/child',{id: material.id},{outlets:{'child': 'result'}}]" (click)="goToResults(material.id)"
+                                class="list-group-item parrafo-dark">{{material.nombre}}</a>
                         </div>
                       </div>
-                  </div>
-              </article>
-              <article class="filter-group">
-                  <header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside2" data-abc="true" aria-expanded="false" class="collapsed">
-                          <h6 class="title">Precio <i class="icon-control fa fa-chevron-down"></i></h6>
-                      </a> </header>
-                  <div class="filter-content collapse" id="collapse_aside2">
-                      <div class="card-body"> <input type="range" class="custom-range" min="0" max="100" name="">
-                          <div class="form-row">
-                              <div class="form-group col-md-6 parrafo-dark"> <label>Min</label> <input class="form-control" placeholder="$0" type="number"> </div>
-                              <div class="form-group text-right col-md-6 parrafo-dark"> <label>Max</label> <input class="form-control" placeholder="$1,0000" type="number"> </div>
-                          </div> <a href="#" class="highlight-button btn btn-medium button xs-margin-bottom-five" data-abc="true">Apply Now</a>
-                      </div>
-                  </div>
-              </article>
-              <article class="filter-group">
-                  <header class="card-header"> <a href="#" data-toggle="collapse" data-target="#collapse_aside4" data-abc="true" class="collapsed" aria-expanded="false">
-                          <h6 class="title">Calificacion <i class="icon-control fa fa-chevron-down"></i></h6>
-                      </a> </header>
-                  <div class="filter-content collapse" id="collapse_aside4">
-                      <div class="card-body"> <label class="custom-control"> <input type="checkbox" checked="" class="custom-control-input">
-                              <div class="custom-control-label parrafo-dark">Muy Bueno </div>
-                          </label> <label class="custom-control"> <input type="checkbox" checked="" class="custom-control-input">
-                              <div class="custom-control-label parrafo-dark">Excelente </div>
-                          </label> <label class="custom-control"> <input type="checkbox" checked="" class="custom-control-input">
-                              <div class="custom-control-label parrafo-dark">Bueno</div>
-                          </label> <label class="custom-control"> <input type="checkbox" checked="" class="custom-control-input">
-                              <div class="custom-control-label parrafo-dark">Malo</div>
-                          </label> </div>
                   </div>
               </article>
           </div>

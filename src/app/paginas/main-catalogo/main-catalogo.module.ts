@@ -13,6 +13,7 @@ import { Catalogo4Directive } from './catalogo4.directive';
 import { Catalogo5Directive } from './catalogo5.directive';
 import { Catalogo6Directive } from './catalogo6.directive';
 import { CatalogoDetailComponent } from './catalogo-detail/catalogo-detail.component';
+import { CatalogoResultComponent } from './catalogo-result/catalogo-result.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CatalogoDetailComponent } from './catalogo-detail/catalogo-detail.compo
     Catalogo4Directive,
     Catalogo5Directive,
     Catalogo6Directive,
-    CatalogoDetailComponent
+    CatalogoDetailComponent,
+    CatalogoResultComponent
   ],
   imports: [
     CommonModule,

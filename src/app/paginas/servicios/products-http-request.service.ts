@@ -16,7 +16,7 @@ export class ProductsHttpRequestService {
       //console.log(HTTPService.url);
       let items = await this.make_request()
       this.modify_array(items)
-      await this.misc.delay(1000)
+      await this.misc.delay(1300)
       return items;
     }
   
@@ -30,7 +30,27 @@ export class ProductsHttpRequestService {
   
     modify_array(products: Array<Object>){
       products.forEach( async (product)=>{
+        product['material'] = await this.misc.getMaterialName(product['material'])
         product['src'] = await this.image.getImageUrl(product['src'])
       })
+    }
+
+    async getProductsListBySearch(materialID: number){
+      //console.log(HTTPService.url);
+      let items = await this.make_request2(materialID)
+      if(items.length > 0){
+        this.modify_array(items)
+        await this.misc.delay(1100)
+      }
+      return items;
+    }
+
+    async make_request2(materialID: number){
+      let productsTemp:Array<Object> = new Array<Object>();
+      let append:string = "?q={\"material\":" + materialID +"}"
+      let x = await this.http.get(HTTPService.url + "real-products" + append , HTTPService.httpOptionsRest).then((res:any) =>{
+        productsTemp = res as Array<Object>
+      })
+      return productsTemp;
     }
 }

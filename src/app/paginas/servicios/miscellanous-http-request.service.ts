@@ -19,6 +19,17 @@ export class MiscellanousHttpRequestService {
     return authorName
   }
 
+  async getMaterialName(materialid: number){
+    let material = ""
+    let y = await this.http.get(HTTPService.url2 + "material/" + materialid, HTTPService.httpOptionsMisc)
+            .then((value)=>{
+                  if(value["material"] != undefined)
+                    material = value["material"]
+             })
+    return material
+
+  }
+
   delay(ms: number) {
     return new Promise( resolve => setTimeout(resolve, ms) );
   }

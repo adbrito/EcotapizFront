@@ -16,6 +16,23 @@ export class CreateAnyComponentService {
 
   constructor(private loadService: DynamicComponentService, public postService: PostHttpRequestService, public itemService: ProductsHttpRequestService) { }
 
+  createUsingList(component: any, lists: ViewContainerRef[], numComponents: number, 
+    counter: number, className: string, listResult: Array<Object>){
+      let controller: boolean = false
+      if(className === "PostObject"){
+        this.listPosts = listResult
+        controller = true
+      }else if (className === "ItemObject"){
+        this.listProducts = listResult
+        controller = true
+      }else{
+        console.log("Class not implemented")
+      }
+      if(controller)
+        this.createManyComponentsManyViews2(component, lists, numComponents, counter, className)
+  }
+
+
   async createManyComponentsManyViews(component: any, lists: ViewContainerRef[], numComponents: number, 
     counter: number, className: string){
       if(className === "PostObject"){
