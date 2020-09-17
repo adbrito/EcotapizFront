@@ -10,7 +10,7 @@
     <hr>
 
     <!-- Date/Time -->
-    <p>Posted on {{postObject.fecha}} at 12:00 PM by {{postObject.autor}} </p>
+    <p>Posted on {{postObject.fecha | date:'mediumDate'}} at 12:00 PM by {{postObject.autor}} </p>
 
     <hr>
 
@@ -34,7 +34,7 @@
 
     <hr>
 
-    <!-- Comments Form -->
+    <!-- Comments Form 
     <div class="card my-4">
       <h5 class="card-header">Leave a Comment:</h5>
       <div class="card-body">
@@ -45,19 +45,19 @@
           <button type="submit" class="btn">Submit</button>
         </form>
       </div>
-    </div>
+    </div>-->
 
     <!-- Single Comment -->
-    <div class="media mb-4">
+    <div *ngFor="let comment of listComentarios" class="media mb-4">
       <img class="d-flex mr-3 rounded-circle" src="../../../../../assets/images/general/avatar2.png" alt="">
       <div class="media-body">
-        <h5 class="mt-0">Commenter Name</h5>
-        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        <h5 class="mt-0">{{comment.autor}}</h5>
+        <p>{{comment.comentario}}
         </p>
       </div>
     </div>
 
-    <!-- Comment with nested comments -->
+    <!-- Comment with nested comments 
     <div class="media mb-4">
       <img class="d-flex mr-3 rounded-circle" src="../../../../../assets/images/general/avatar2.png" alt="">
       <div class="media-body">
@@ -85,6 +85,6 @@
         </div>
 
       </div>
-    </div>
+    </div>-->
 
   </div>
