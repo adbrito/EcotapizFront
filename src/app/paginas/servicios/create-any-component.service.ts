@@ -3,6 +3,8 @@ import * as posts from '../../../assets/recursos-datos/posts.json'
 import * as products from '../../../assets/recursos-datos/productos.json'
 import { DynamicComponentService } from './dynamic-component.service';
 import { GenComponent } from './GenComponent';
+import { PostHttpRequestService } from './post-http-request.service';
+import { ProductsHttpRequestService } from './products-http-request.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +14,26 @@ export class CreateAnyComponentService {
   listPosts = (posts as any).default;
   listProducts = (products as any).default;
 
-  constructor(private loadService: DynamicComponentService) { }
+  constructor(private loadService: DynamicComponentService, public postService: PostHttpRequestService, public itemService: ProductsHttpRequestService) { }
 
-  createManyComponentsManyViews(component: any, lists: ViewContainerRef[], numComponents: number, 
+  async createManyComponentsManyViews(component: any, lists: ViewContainerRef[], numComponents: number, 
+    counter: number, className: string){
+      if(className === "PostObject"){
+        await this.postService.getPostsList().then((value)=>{
+          this.listPosts = value
+          this.createManyComponentsManyViews2(component, lists, numComponents, counter, className)
+        });
+      }else if (className === "ItemObject"){
+        await this.itemService.getProductsList().then((value)=>{
+          this.listProducts = value
+          this.createManyComponentsManyViews2(component, lists, numComponents, counter, className)
+        })
+      }else{
+        console.log("Class not implemented")
+      }
+  }
+
+  async createManyComponentsManyViews2(component: any, lists: ViewContainerRef[], numComponents: number, 
     counter: number, className: string){
       let i: number = 0;
 

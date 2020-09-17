@@ -4,6 +4,7 @@ import * as products from '../../../assets/recursos-datos/productos.json'
 import { CardPostComponent } from '../buscador/card-post/card-post.component';
 import { CardItemComponent } from '../buscador/card-item/card-item.component';
 import { CreateAnyComponentService } from './create-any-component.service';
+import { PostHttpRequestService } from './post-http-request.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class SearcherService {
   listPosts = (posts as any).default;
   listProducts = (products as any).default; 
 
-  constructor(private loadService: CreateAnyComponentService) {}
+  constructor(private loadService: CreateAnyComponentService, public postService: PostHttpRequestService) {}
 
   buscarTodo(searcher:string,view: ViewContainerRef){
       this.searchNoticias(searcher,view)
